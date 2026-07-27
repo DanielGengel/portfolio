@@ -1,0 +1,198 @@
+.about {
+  position: relative;
+
+//   width: 1240px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: clamp(60px, 8vw, 100px) 24px 140px;
+
+  color: #000;
+  background-color: #fffcf5;
+  background-image: radial-gradient(circle, rgb(224 150 72 / 35%) 1px, transparent 1px);
+  background-size: 54px 65px;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(50px, 8vw, 100px);
+
+  width: min(100%, 1240px);
+  height: 680px;
+  margin-inline: auto;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about__title {
+  margin: 0 0 35px;
+
+  font-family:
+    Arial Black,
+    Arial,
+    sans-serif;
+  font-size: clamp(50px, 7vw, 80px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.about__text {
+  max-width: 500px;
+
+  font-size: clamp(14px, 1.4vw, 17px);
+  line-height: 1.25;
+
+  p {
+    margin: 0 0 10px;
+  }
+}
+
+.about__facts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin: 32px 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+    width: 23px;
+    height: 23px;
+
+    object-fit: contain;
+  }
+}
+
+.about__button {
+  align-self: center;
+
+  min-width: 165px;
+  margin-top: 38px;
+  padding: 14px 24px;
+
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: 2px solid #000;
+
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+
+  &:hover {
+    color: #fffcf5;
+    background-color: #000;
+    transform: translateY(-3px);
+  }
+
+  &:focus-visible {
+    outline: 3px solid #00b982;
+    outline-offset: 4px;
+  }
+}
+
+.about__image {
+  width: 100%;
+  max-width: 460px;
+  justify-self: end;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+  }
+}
+
+/* Decorative arrow in the bottom-right corner */
+
+.about__arrow {
+  position: absolute;
+  right: 8%;
+  bottom: 35px;
+
+  width: 80px;
+  height: 80px;
+
+  // Diagonal arrow line
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 105px;
+    height: 2px;
+
+    content: '';
+    background-color: #000;
+
+    transform: rotate(-45deg);
+    transform-origin: left center;
+  }
+
+  // L-shaped arrowhead
+  &::before {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    content: '';
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+  }
+}
+
+@media (max-width: 750px) {
+  .about {
+    padding-bottom: 100px;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about__content {
+    width: min(100%, 550px);
+    margin-inline: auto;
+  }
+
+  .about__title {
+    margin-bottom: 25px;
+  }
+
+  .about__button {
+    align-self: flex-start;
+  }
+
+  .about__image {
+    max-width: 550px;
+    justify-self: center;
+  }
+
+  .about__arrow {
+    display: none;
+  }
+}
