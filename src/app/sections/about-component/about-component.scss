@@ -2,7 +2,7 @@
   position: relative;
 
   //   width: 1240px;
-  min-height: 50dvh;
+  min-height: 30dvh;
   margin: 0 auto;
   padding: clamp(60px, 8vw, 100px) 24px 140px;
 
@@ -106,62 +106,62 @@
 }
 
 .about__image {
-  width: 100%;
-  max-width: 460px;
+  // width: 100%;
+  // max-width: 460px;
   margin-top: 120px;
 
   justify-self: end;
 
   img {
     display: block;
-    width: 430px;
+    max-width: 480px;
     aspect-ratio: 1 / 1;
 
     object-fit: cover;
   }
 }
 
-/* Arrow in the bottom-right corner */
+// /* Arrow in the bottom-right corner */
 
-.about__arrow {
-  position: absolute;
-  right: 8%;
-  bottom: 35px;
+// .about__arrow {
+//   position: absolute;
+//   right: 8%;
+//   bottom: 35px;
 
-  width: 80px;
-  height: 80px;
+//   width: 80px;
+//   height: 80px;
 
-  // Diagonal arrow line
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+//   // Diagonal arrow line
+//   &::after {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
 
-    width: 105px;
-    height: 2px;
+//     width: 105px;
+//     height: 2px;
 
-    content: '';
-    background-color: #000;
+//     content: '';
+//     background-color: #000;
 
-    transform: rotate(-45deg);
-    transform-origin: left center;
-  }
+//     transform: rotate(-45deg);
+//     transform-origin: left center;
+//   }
 
-  // L-shaped arrowhead
-  &::before {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
+//   // L-shaped arrowhead
+//   &::before {
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 0;
+//     left: 0;
 
-    width: 40px;
-    height: 40px;
+//     width: 40px;
+//     height: 40px;
 
-    content: '';
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
-  }
-}
+//     content: '';
+//     border-bottom: 2px solid #000;
+//     border-left: 2px solid #000;
+//   }
+// }
 
 @media (max-width: 750px) {
   .about {
@@ -189,6 +189,10 @@
   .about__image {
     max-width: 550px;
     justify-self: center;
+
+    img {
+      max-width: 280px;
+    }
   }
 
   .about__arrow {

@@ -1,0 +1,14 @@
+<section
+  class="arrow-section"
+  [class.arrow-section--right]="startSide() === 'right'"
+  [class.arrow-section--left]="startSide() === 'left'"
+>
+  <div
+    class="arrow"
+    [class.arrow--from-right]="startSide() === 'right'"
+    [class.arrow--from-left]="startSide() === 'left'"
+    [class.arrow--active]="isVisible()"
+  >
+    <span class="arrow__shape" [class.arrow__shape--mirrored]="startSide() === 'left'"></span>
+  </div>
+</section>

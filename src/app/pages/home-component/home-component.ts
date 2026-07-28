@@ -5,12 +5,14 @@ import { SkillsComponent } from '../../sections/skills-component/skills-componen
 import { PortfolioComponent } from '../../sections/portfolio-component/portfolio-component';
 import { ReferencesComponent } from '../../sections/references-component/references-component';
 import { ContactComponent } from '../../sections/contact-component/contact-component';
+import { ArrowComponent } from '../../sections/arrow-component/arrow-component';
 
 
 @Component({
   selector: 'app-home-component',
   imports: [HeroComponent,
     AboutComponent,
+    ArrowComponent,
     SkillsComponent,
     PortfolioComponent,
     ReferencesComponent,
