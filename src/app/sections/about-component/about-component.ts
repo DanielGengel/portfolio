@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-component',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './about-component.html',
   styleUrl: './about-component.scss',
 })
-export class AboutComponent {}
+export class AboutComponent {
+
+  private translate = inject(TranslateService);
+
+}

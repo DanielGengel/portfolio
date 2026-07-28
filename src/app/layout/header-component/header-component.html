@@ -9,6 +9,10 @@
     </span>
   </a>
 
+  <div class="title">
+    <h1>{{ 'demo.title' | translate }}</h1>
+</div>
+
   <div class="header-right">
     <div class="languages">
       <button type="button" [class.active]="language() === 'en'" (click)="changeLanguage('en')">
@@ -20,7 +24,11 @@
       </button>
     </div>
 
-    <button #menuButton class="burger" type="button" aria-label="Menü öffnen oder schließen"
+    <button
+      #menuButton
+      class="burger"
+      type="button"
+      aria-label="Menü öffnen oder schließen"
       [attr.aria-expanded]="menuOpen()"
       aria-controls="main-menu"
       (click)="toggleMenu()"

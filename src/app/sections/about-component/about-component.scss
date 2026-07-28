@@ -1,8 +1,8 @@
 .about {
   position: relative;
 
-//   width: 1240px;
-  min-height: 100dvh;
+  //   width: 1240px;
+  min-height: 50dvh;
   margin: 0 auto;
   padding: clamp(60px, 8vw, 100px) 24px 140px;
 
@@ -15,15 +15,15 @@
 .about__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: clamp(50px, 8vw, 100px);
+  align-items: start;
+  gap: clamp(50px, 4vw, 100px);
 
   width: min(100%, 1240px);
-  height: 680px;
   margin-inline: auto;
 }
 
 .about__content {
+  max-width: 620px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,18 +32,15 @@
 .about__title {
   margin: 0 0 35px;
 
-  font-family:
-    Arial Black,
-    Arial,
-    sans-serif;
-  font-size: clamp(50px, 7vw, 80px);
-  font-weight: 900;
+  font-family: Syne;
+  font-size: clamp(32px, 5vw, 78px);
+  font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
 }
 
 .about__text {
-  max-width: 500px;
+  max-width: 620px;
 
   font-size: clamp(14px, 1.4vw, 17px);
   line-height: 1.25;
@@ -111,18 +108,20 @@
 .about__image {
   width: 100%;
   max-width: 460px;
+  margin-top: 120px;
+
   justify-self: end;
 
   img {
     display: block;
-    width: 100%;
+    width: 430px;
     aspect-ratio: 1 / 1;
 
     object-fit: cover;
   }
 }
 
-/* Decorative arrow in the bottom-right corner */
+/* Arrow in the bottom-right corner */
 
 .about__arrow {
   position: absolute;

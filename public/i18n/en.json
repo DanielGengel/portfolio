@@ -1,0 +1,14 @@
+{
+    "demo.title": "This is a translation",
+    "demo.simple" : "This is a test!",
+
+    "skills" : {
+        "title" : "My Skills",
+         "javaScript": "I am <b>professional</b> in JavaScript"
+    },
+
+    "about" : {
+        "text": "Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.",
+        "text2": "Add a brief description of your problem-solving approach. You can include traits such as analytical thinking, creativity, persistence and collaboration."
+    }
+}

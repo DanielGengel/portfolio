@@ -1,0 +1,18 @@
+{
+    "demo.title": "Dies ist eine Übersetzung",
+    "demo.simple" : "Dies ist ein Test",
+
+    "skills" : {
+        "title" : "Meine Fähigkeiten",
+        "javaScript": "Ich bin <b>Profi</b> in JavaScript"
+    },
+
+    "about" : {
+        "text": "Schreiben Sie einige Informationen über sich selbst auf, die sich auf die IT beziehen. Warum haben Sie eine Leidenschaft für das Programmieren? Zeigen Sie den Wunsch, neue Technologien zu erlernen.",
+        "text2": "Fügen Sie eine kurze Beschreibung Ihres Problemlösungsansatzes hinzu. Sie können Eigenschaften wie analytisches Denken, Kreativität, Beharrlichkeit und Zusammenarbeit einbeziehen."
+    }
+}
+
+
+
+
