@@ -18,7 +18,7 @@
   left: 0;
 
   background: variable.$light-bg;
-  
+
   margin: 0 auto;
 
   display: flex;
@@ -288,49 +288,130 @@
 .menu__link {
   position: relative;
 
-  min-width: min(80%, 520px);
-  padding-left: 55px;
+  display: inline-block;
+  width: fit-content;
 
   color: #000;
-  font-family: Arial Black, Arial, sans-serif;
-  font-size: clamp(45px, 7vw, 90px);
-  font-weight: 900;
+  font-family: Syne;
+  font-size: clamp(45px, 5vw, 96px);
+  font-weight: 700;
   line-height: 1;
-  text-align: center;
   text-decoration: none;
 
-  transition:
-    color 200ms ease,
-    transform 200ms ease;
+  transition: color 150ms ease;
 
-  // L-förmiges Element links
   &::before {
     position: absolute;
     bottom: -20px;
-    left: 0;
+    left: -55px;
 
     width: 38px;
     height: 48px;
 
-    content: "";
+    box-sizing: border-box;
+    content: '';
+
     border-bottom: 3px solid #000;
     border-left: 3px solid #000;
-
-    transition:
-      border-color 200ms ease,
-      transform 200ms ease;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: #00b982;
-    transform: translateX(8px);
+  }
 
-    &::before {
-      border-color: #00b982;
-      transform: translateX(-8px);
-    }
+  &:hover::before,
+  &:focus-visible::before {
+    animation: extend-menu-line 280ms ease-out forwards;
   }
 }
+
+@keyframes extend-menu-line {
+  0% {
+    // left: -55px;
+    width: 38px;
+    height: 48px;
+
+    border-bottom-color: #000;
+    border-left-color: #000;
+  }
+
+  // Senkrechter Teil fährt nach unten
+  40% {
+    left: -55px;
+    width: 38px;
+    height: 0;
+
+    // border-bottom-color: #00b982;
+    // border-left-color: #00b982;
+  }
+
+  // Senkrechter Teil verschwindet
+  45% {
+    left: -55px;
+    width: 38px;
+    height: 0;
+
+    // border-bottom-color: #00b982;
+    border-left-color: transparent;
+  }
+
+  // Linie liegt unter den rechten 50 % der Schrift
+  100% {
+    left: 50%;
+    width: 50%;
+    height: 0;
+
+    // border-bottom-color: #00b982;
+    border-left-color: transparent;
+  }
+}
+// .menu__link {
+//   position: relative;
+
+//   min-width: min(80%, 520px);
+//   padding-left: 55px;
+
+//   color: #000;
+//   font-family: Syne;
+//   font-size: clamp(45px, 7vw, 96px);
+//   font-weight: 700;
+//   line-height: 1;
+//   text-align: center;
+//   text-decoration: none;
+
+//   transition:
+//     color 200ms ease,
+//     transform 200ms ease;
+
+//   // L-förmiges Element links
+//   &::before {
+//     position: absolute;
+//     bottom: -20px;
+//     left: 0;
+
+//     width: 38px;
+//     height: 48px;
+
+//     content: "";
+//     border-bottom: 3px solid #000;
+//     border-left: 3px solid #000;
+
+//     transition:
+//       border-color 200ms ease,
+//       transform 200ms ease;
+//   }
+
+//   &:hover {
+//     color: #00b982;
+//     transform: translateX(8px);
+
+//     &::before {
+//       border-color: #00b982;
+//       transform: translateX(-8px);
+//     }
+//   }
+// }
 
 .menu__bottom {
   position: absolute;
@@ -350,7 +431,7 @@
 
   color: #fff;
 
-  background-image: url("/assets/images/background-menu-shape.png");
+  background-image: url('/assets/images/background-menu-shape.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% 100%;
@@ -361,8 +442,9 @@
   flex-direction: column;
 
   strong {
-    font-family: Arial Black, Arial, sans-serif;
-    font-size: clamp(45px, 7vw, 80px);
+    font-family: Syne;
+    font-size: clamp(45px, 7vw, 78px);
+    font-weight: 800;
     line-height: 1;
   }
 
