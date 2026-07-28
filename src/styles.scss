@@ -1,1 +1,28 @@
-@use './app/styles/main'
+@use './app/styles/main';
+@use './app/styles/variables' as variable;
+
+.section-title {
+  margin: 0;
+
+  color: variable.$text-color-primary;
+  font-family: Syne;
+  font-size: clamp(36px, 5vw, 78px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+
+  transition:
+    color 200ms ease,
+    letter-spacing 200ms ease;
+
+  &:hover {
+    color: variable.$highlight;
+    letter-spacing: -0.03em;
+  }
+}
+
+//   font-family: Syne;
+//   font-size: clamp(36px, 5vw, 78px);
+//   font-weight: 800;
+//   line-height: 1;
+//   letter-spacing: -0.05em;
