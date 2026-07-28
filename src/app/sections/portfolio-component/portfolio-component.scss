@@ -1,0 +1,368 @@
+.portfolio {
+  width: min(calc(100% - 40px), 1240px);
+  margin-inline: auto;
+}
+
+.portfolio__intro {
+  min-height: 270px;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.portfolio__title {
+  margin-bottom: 35px;
+}
+
+.portfolio__description {
+  max-width: 520px;
+  margin: 0;
+
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.25;
+}
+
+.portfolio__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* Einzelnes Projekt */
+
+.project {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(60px, 8vw, 120px);
+
+  min-height: 480px;
+  padding: 55px 40px;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+.project__number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  font-family:
+    Arial Black,
+    Arial,
+    sans-serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 900;
+}
+
+.project--reverse .project__number {
+  right: auto;
+  left: 20px;
+}
+
+/* Bild */
+
+.project__media {
+  position: relative;
+
+  width: 100%;
+  isolation: isolate;
+}
+
+.project__media::after {
+  position: absolute;
+  z-index: 2;
+  inset: 22px -18px -18px 22px;
+
+  content: "";
+  pointer-events: none;
+
+  border: 3px solid #000;
+  opacity: 0;
+
+  transition: opacity 400ms ease;
+}
+
+.project--reverse .project__media::after {
+  inset: 22px 22px -18px -18px;
+}
+
+.project__image {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+
+  object-fit: cover;
+  filter: grayscale(1);
+
+  transition:
+    filter 500ms ease,
+    transform 500ms ease;
+}
+
+/* Schwarzer Kreis */
+
+.project__arrow {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -58px;
+
+  display: grid;
+  width: 76px;
+  height: 76px;
+
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+
+  place-items: center;
+
+  transform: translateY(-50%) scale(0.7);
+
+  transition:
+    opacity 400ms ease,
+    transform 400ms ease;
+}
+
+.project--reverse .project__arrow {
+  right: auto;
+  left: -58px;
+}
+
+.project__arrow-symbol {
+  display: block;
+
+  font-family: Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+
+  // Pfeil zeigt anfangs nach unten
+  transform: rotate(180deg);
+
+  transition: transform 500ms ease;
+}
+
+/* Textbereich */
+
+.project__content {
+  opacity: 0;
+  transform: translateY(25px);
+
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease;
+}
+
+.project__title {
+  margin: 0 0 12px;
+
+  font-family:
+    Arial Black,
+    Arial,
+    sans-serif;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.project__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  margin-bottom: 20px;
+
+  color: #00b982;
+  font-size: clamp(15px, 2vw, 21px);
+}
+
+.project__description {
+  max-width: 500px;
+  margin: 0 0 25px;
+
+  font-size: clamp(14px, 1.5vw, 17px);
+  line-height: 1.35;
+}
+
+.project__button {
+  display: inline-block;
+
+  min-width: 150px;
+  padding: 14px 25px;
+
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+
+  border: 3px solid #000;
+
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+
+  &:hover {
+    color: #fffcf5;
+    background-color: #000;
+  }
+}
+
+/* Zweites Projekt spiegeln */
+
+.project--reverse .project__media {
+  order: 2;
+}
+
+.project--reverse .project__content {
+  order: 1;
+  text-align: right;
+}
+
+.project--reverse .project__technologies {
+  justify-content: flex-end;
+}
+
+.project--reverse .project__description {
+  margin-left: auto;
+}
+
+/* Hover- und Tastatur-Effekte */
+
+.project:hover .project__image,
+.project:focus .project__image,
+.project:focus-within .project__image {
+  filter: grayscale(0);
+  transform: scale(1.02);
+}
+
+.project:hover .project__content,
+.project:focus .project__content,
+.project:focus-within .project__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bild links: Pfeil dreht nach rechts oben */
+
+.project:hover .project__arrow-symbol,
+.project:focus .project__arrow-symbol,
+.project:focus-within .project__arrow-symbol {
+  transform: rotate(45deg);
+}
+
+/* Bild rechts: Pfeil dreht nach links oben */
+
+.project--reverse:hover .project__arrow-symbol,
+.project--reverse:focus .project__arrow-symbol,
+.project--reverse:focus-within .project__arrow-symbol {
+  transform: rotate(-45deg);
+}
+
+.project:hover .project__media::after,
+.project:focus .project__media::after,
+.project:focus-within .project__media::after {
+  opacity: 1;
+}
+
+.project:hover .project__arrow,
+.project:focus .project__arrow,
+.project:focus-within .project__arrow {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+@media (max-width: 800px) {
+  .portfolio {
+    width: min(calc(100% - 30px), 1240px);
+  }
+
+  .portfolio__intro {
+    min-height: 230px;
+    padding-inline: 10px;
+  }
+
+  .portfolio__projects {
+    gap: 80px;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 55px;
+
+    min-height: auto;
+    padding: 70px 10px 30px;
+  }
+
+  .project__media,
+  .project--reverse .project__media {
+    order: 1;
+  }
+
+  .project__content,
+  .project--reverse .project__content {
+    order: 2;
+
+    opacity: 1;
+    text-align: left;
+
+    transform: none;
+  }
+
+  .project__number,
+  .project--reverse .project__number {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+
+  .project__technologies,
+  .project--reverse .project__technologies {
+    justify-content: flex-start;
+  }
+
+  .project__description,
+  .project--reverse .project__description {
+    margin-left: 0;
+  }
+
+  .project__image {
+    filter: grayscale(0);
+  }
+
+  .project__media::after,
+  .project--reverse .project__media::after {
+    inset: 12px -8px -12px 12px;
+    opacity: 1;
+  }
+
+//   .project__arrow,
+//   .project--reverse .project__arrow {
+//     opacity: 0;
+//   }
+
+//   .project:hover .project__media::after,
+// .project:focus .project__media::after,
+// .project:focus-within .project__media::after {
+//   opacity: 0;
+// }
+
+.project:hover .project__arrow,
+.project:focus .project__arrow,
+.project:focus-within .project__arrow {
+  opacity: 0;
+}
+}

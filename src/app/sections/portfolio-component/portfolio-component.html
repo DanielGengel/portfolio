@@ -1,1 +1,60 @@
-<p>portfolio-component works!</p>
+<section id="portfolio" class="portfolio">
+  <header class="portfolio__intro">
+    <h2 class="section-title portfolio__title">Portfolio</h2>
+
+    <p class="portfolio__description">
+      Explore a selection of my work here – interact with projects to see my skills in action.
+    </p>
+  </header>
+
+  <div class="portfolio__projects">
+    @for (project of projects; track project.title) {
+      <article class="project" [class.project--reverse]="$index % 2 === 1" tabindex="0">
+        <span class="project__number">
+          {{ project.number }}
+        </span>
+
+        <div class="project__media">
+          <img
+            class="project__image"
+            [src]="project.image"
+            [alt]="'Screenshot of ' + project.title"
+          />
+
+          <div class="project__arrow" aria-hidden="true">
+            <span class="project__arrow-symbol">↑</span>
+          </div>
+        </div>
+
+        <div class="project__content">
+          <h3 class="project__title">
+            {{ project.title }}
+          </h3>
+
+          <div class="project__technologies">
+            @for (technology of project.technologies; track technology; let last = $last) {
+              <span>{{ technology }}</span>
+
+              @if (!last) {
+                <span aria-hidden="true">|</span>
+              }
+            }
+          </div>
+
+          <p class="project__description">
+            {{ project.description }}
+          </p>
+
+          <a
+            class="project__button"
+            [href]="project.github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </article>
+    }
+  </div>
+</section>
