@@ -1,7 +1,6 @@
 import { Component, signal, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import {TranslatePipe, TranslateService} from '@ngx-translate/core';
-
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header-component',
@@ -13,13 +12,26 @@ export class HeaderComponent {
   menuOpen = signal(false);
   language = signal<'de' | 'en'>('en');
 
+  // toggleMenu(): void {
+  //   this.menuOpen.update((open) => !open);
+  // }
+
+  // closeMenu(menuButton?: HTMLButtonElement): void {
+  //   menuButton?.focus();
+  //   this.menuOpen.set(false);
+  // }
+
   toggleMenu(): void {
-    this.menuOpen.update((open) => !open);
+    const menuWillOpen = !this.menuOpen();
+
+    this.menuOpen.set(menuWillOpen);
+
+    document.body.style.overflow = menuWillOpen ? 'hidden' : '';
   }
 
-  closeMenu(menuButton?: HTMLButtonElement): void {
-    menuButton?.focus();
+  closeMenu(): void {
     this.menuOpen.set(false);
+    document.body.style.overflow = '';
   }
 
   private translate = inject(TranslateService);

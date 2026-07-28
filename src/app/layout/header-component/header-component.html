@@ -36,10 +36,58 @@
   </div>
 </header>
 
-<nav id="main-menu" class="menu" [class.menu-open]="menuOpen()" [inert]="!menuOpen()">
+<!-- <nav id="main-menu" class="menu" [class.menu-open]="menuOpen()" [inert]="!menuOpen()">
   <a routerLink="/" fragment="about" (click)="closeMenu(menuButton)"> About me </a>
 
   <a routerLink="/" fragment="skills" (click)="closeMenu(menuButton)"> My skills </a>
 
   <a routerLink="/" fragment="portfolio" (click)="closeMenu(menuButton)"> Portfolio </a>
+</nav> -->
+
+<nav
+  id="main-menu"
+  class="menu"
+  [class.menu-open]="menuOpen()"
+  [inert]="!menuOpen()"
+  aria-label="Hauptnavigation"
+>
+  <div class="menu__links">
+    <a class="menu__link" routerLink="/" fragment="about" (click)="closeMenu()"> About me </a>
+
+    <a class="menu__link" routerLink="/" fragment="skills" (click)="closeMenu()"> My skills </a>
+
+    <a class="menu__link" routerLink="/" fragment="portfolio" (click)="closeMenu()"> Portfolio </a>
+  </div>
+
+  <div class="menu__bottom">
+    <div class="menu__contact">
+      <strong>Say Hi!</strong>
+
+      <a href="mailto:stefan@gmail.com"> stefan&#64;gmail.com </a>
+    </div>
+
+    <div class="menu__socials">
+      <a
+        href="https://github.com/dein-name"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <img src="/assets/icons/github-icon.png" alt="" />
+      </a>
+
+      <a href="mailto:stefan@gmail.com" aria-label="E-Mail schreiben">
+        <img src="/assets/icons/email-icon.png" alt="" />
+      </a>
+
+      <a
+        href="https://linkedin.com/in/dein-name"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <img src="/assets/icons/linkedin-icon.png" alt="" />
+      </a>
+    </div>
+  </div>
 </nav>
