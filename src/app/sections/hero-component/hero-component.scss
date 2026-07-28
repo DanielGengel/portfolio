@@ -9,7 +9,7 @@
    margin: 0 auto;
 
   color: #000;
-  background-color: #fffcf5;
+  background-color: transparent;
   background-image: radial-gradient(circle, rgb(224 150 72 / 35%) 1px, transparent 1px);
   background-size: 54px 65px;
 }
@@ -50,7 +50,7 @@
 
 .hero__line {
   flex: 1;
-  height: 1px;
+  height: 3px;
 
   background-color: #000;
 }

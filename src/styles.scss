@@ -1,6 +1,15 @@
 @use './app/styles/main';
 @use './app/styles/variables' as variable;
 
+body {
+  margin: 0;
+
+  // Global background color and dotted pattern
+  background-color: #fffcf5;
+  background-image: radial-gradient(circle, rgb(224 150 72 / 30%) 2px, transparent 2px);
+  background-size: 80px 80px;
+}
+
 .section-title {
   margin: 0;
 
