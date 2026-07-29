@@ -1,0 +1,178 @@
+@use '../../styles/variables' as variable;
+
+.footer {
+  width: 100%;
+
+  //   color: var(--inverse-text, #fff);
+  background-color: variable.$logo-color-dark;
+  //   border: 1px solid var(--inverse-border, #fff);
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: min(calc(100% - 40px), 1240px);
+  min-height: 110px;
+  margin-inline: auto;
+  padding-block: 22px;
+
+  box-sizing: border-box;
+}
+
+.footer__branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+// .footer__logo {
+//   width: fit-content;
+
+//   /*
+//    * Das schwarze Header-Logo wird weiß.
+//    * Die helle Ausschnittfarbe wird dabei schwarz.
+//    */
+//   filter: invert(1);
+
+//   /*
+//    * Das komplette Logo wird verkleinert,
+//    * ohne jede einzelne Größe zu verändern.
+//    */
+//   transform: scale(0.75);
+//   transform-origin: left center;
+// }
+
+.logo {
+  display: inline-flex;
+  color: variable.$logo-color-light;
+  text-decoration: none;
+
+  &__symbol {
+    display: flex;
+    align-items: center;
+    height: 34px;
+  }
+
+  &__bracket {
+    width: 10px;
+    height: 26px;
+    box-sizing: border-box;
+  }
+
+  &__bracket--left {
+    border-top: 4px solid variable.$logo-color-light;
+    border-bottom: 4px solid variable.$logo-color-light;
+    border-left: 4px solid variable.$logo-color-light;
+  }
+
+  &__bracket--right {
+    border-top: 4px solid variable.$logo-color-light;
+    border-right: 4px solid variable.$logo-color-light;
+    border-bottom: 4px solid variable.$logo-color-light;
+  }
+
+  &__letter {
+    position: relative;
+    display: inline-block;
+    font-family: Syne;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  &__letter--d {
+    z-index: 2;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    // transform: rotate(10deg);
+  }
+
+  // letter b means backslash overlapping the D and G
+  // backslah color equals background color
+  &__letter--b {
+    z-index: 2;
+    color: variable.$logo-color-dark;
+    margin-left: -12px;
+    margin-right: -15px;
+    font-size: 26px;
+
+    transform: rotate(10deg);
+  }
+
+  &__letter--g {
+    z-index: 1;
+    margin-top: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    // transform: skewX(-7deg);
+  }
+}
+
+.footer__copyright {
+  color: variable.$logo-color-light;
+  font-family: Overpass;
+  font-size: 16px;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  a {
+    display: inline-flex;
+
+    border-radius: 4px;
+
+    &:focus-visible {
+      outline: 2px solid variable.$highlight;
+      outline-offset: 4px;
+    }
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+
+    transition: transform 200ms ease;
+  }
+
+  a:hover img {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+.footer__legal {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  color: variable.$logo-color-light;
+
+  .footer__privacy,
+  .footer__imprint {
+    font-family: Overpass;
+    font-size: 16px;
+    text-decoration: none;
+
+    transition: color 200ms ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--accent, #00b982);
+    }
+  }
+}

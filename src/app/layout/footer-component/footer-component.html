@@ -1,1 +1,47 @@
-<h1><p>footer-component works!</p></h1>
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__branding">
+      <a class="logo">
+        <span class="logo__symbol" aria-hidden="true">
+          <span class="logo__bracket logo__bracket--left"></span>
+          <span class="logo__letter logo__letter--d">D</span>
+          <span class="logo__letter logo__letter--b">/</span>
+          <span class="logo__letter logo__letter--g">G</span>
+          <span class="logo__bracket logo__bracket--right"></span>
+        </span>
+      </a>
+
+      <div class="footer__copyright">© Daniel 2026</div>
+    </div>
+
+    <div class="footer__right">
+      <nav class="footer__socials" aria-label="Social Media">
+        <a
+          href="https://github.com/profile-name"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img src="assets/icons/github-link-icon.png" alt="" />
+        </a>
+
+        <a href="mailto:daniel@example.com" aria-label="E-Mail schreiben">
+          <img src="assets/icons/email-link-icon.png" alt="" />
+        </a>
+
+        <a
+          href="https://linkedin.com/in/dein-name"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <img src="assets/icons/linkedin-link-icon.png" alt="" />
+        </a>
+      </nav>
+      <div class="footer__legal">
+        <a class="footer__privacy" routerLink="/privacy"> Privacy </a>|
+        <a class="footer__imprint" routerLink="/imprint"> Imprint </a>
+      </div>
+    </div>
+  </div>
+</footer>
