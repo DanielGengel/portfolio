@@ -1,1 +1,116 @@
-<p>contact-component works!</p>
+<section id="contact" class="contact">
+  <div class="contact__content">
+    <h2 class="contact__title">Say Hi!</h2>
+
+    <div class="contact__form-area">
+      <h3>Want to discuss a new project?</h3>
+
+      <p class="contact__intro">Say hello! Let’s discuss your ideas and make it happen.</p>
+
+      <form class="contact__form" [formRoot]="contactForm">
+        <div class="form-field">
+          <label for="contact-name"> Your name </label>
+
+          <input
+            id="contact-name"
+            type="text"
+            autocomplete="name"
+            placeholder="Your name"
+            [formField]="contactForm.name"
+          />
+
+          @if (contactForm.name().touched() && contactForm.name().invalid()) {
+            <div class="form-field__errors">
+              @for (error of contactForm.name().errors(); track error) {
+                <span>{{ error.message }}</span>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="form-field">
+          <label for="contact-email"> Your email </label>
+
+          <input
+            id="contact-email"
+            type="email"
+            autocomplete="email"
+            placeholder="Your email"
+            [formField]="contactForm.email"
+          />
+
+          @if (contactForm.email().touched() && contactForm.email().invalid()) {
+            <div class="form-field__errors">
+              @for (error of contactForm.email().errors(); track error) {
+                <span>{{ error.message }}</span>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="form-field">
+          <label for="contact-message"> Your message </label>
+
+          <textarea
+            id="contact-message"
+            rows="5"
+            placeholder="Your message"
+            [formField]="contactForm.message"
+          ></textarea>
+
+          @if (contactForm.message().touched() && contactForm.message().invalid()) {
+            <div class="form-field__errors">
+              @for (error of contactForm.message().errors(); track error) {
+                <span>{{ error.message }}</span>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="privacy-field">
+          <input id="privacy" type="checkbox" [formField]="contactForm.privacyAccepted" />
+
+          <label for="privacy">
+            I’ve read the
+
+            <a routerLink="/privacy-policy"> privacy policy </a>
+
+            and agree to the processing of my data as outlined.
+          </label>
+        </div>
+
+        @if (contactForm.privacyAccepted().touched() && contactForm.privacyAccepted().invalid()) {
+          <div class="privacy-field__error">
+            @for (error of contactForm.privacyAccepted().errors(); track error) {
+              <span>{{ error.message }}</span>
+            }
+          </div>
+        }
+
+        @for (error of contactForm().errors(); track error) {
+          <p class="contact__server-error">
+            {{ error.message }}
+          </p>
+        }
+
+        <button
+          class="contact__submit"
+          type="submit"
+          [disabled]="contactForm().invalid() || contactForm().submitting()"
+        >
+          @if (contactForm().submitting()) {
+            Sending...
+          } @else {
+            Send message
+          }
+        </button>
+
+        @if (messageSent()) {
+          <p class="contact__success" role="status">Thank you! Your message has been sent.</p>
+        }
+      </form>
+    </div>
+
+    <a class="contact__back-to-top" href="#top" aria-label="Back to the top"> ↑ </a>
+  </div>
+</section>

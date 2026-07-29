@@ -1,15 +1,9 @@
 @use '../../styles/variables' as variable;
 
-// :host {
-//   display: block;
-//   position: relative;
-//   z-index: 100;
-// }
-
 .header {
   max-width: 1240px;
   height: 92px;
-  padding: 0 45px;
+  // padding: 0 45px;
 
   position: fixed;
   z-index: 1000;

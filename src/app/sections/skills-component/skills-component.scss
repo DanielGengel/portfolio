@@ -1,6 +1,17 @@
-.skills {
-  position: relative;
 
+
+.skills {
+
+  min-height: 30dvh;
+  margin: 0 auto;
+  padding: clamp(60px, 8vw, 100px) 24px 140px;
+
+  color: #000;
+  background-color: transparent;
+}
+
+.skills__container {
+  
   width: min(calc(100% - 40px), 1240px);
   margin: 70px auto;
   padding: clamp(70px, 8vw, 110px) clamp(25px, 7vw, 90px) 60px;

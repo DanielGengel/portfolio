@@ -1,0 +1,239 @@
+@use '../../styles/variables' as variable;
+
+.contact {
+  position: relative;
+
+  min-height: 780px;
+  padding: clamp(140px, 15vw, 210px) 20px 80px;
+
+  box-sizing: border-box;
+
+  color: variable.$light-bg;
+
+  background-color: transparent;
+  background-image: url("/assets/images/contact-form-shape.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+}
+
+.contact__content {
+  position: relative;
+
+  width: min(100%, 1240px);
+  margin-inline: auto;
+}
+
+.contact__title {
+  margin: 0 0 35px;
+
+  color: variable.$light-bg;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(52px, 7vw, 86px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.contact__form-area {
+  width: min(100%, 560px);
+  margin-inline: auto;
+
+  font-family: "Overpass", sans-serif;
+
+  h3 {
+    margin: 0 0 14px;
+
+    color: variable.$highlight;
+    font-size: clamp(20px, 2.5vw, 27px);
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.contact__intro {
+  margin: 0 0 32px;
+
+  color: variable.$light-bg;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-field {
+  position: relative;
+
+  label {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    box-sizing: border-box;
+
+    color: variable.$light-bg;
+    font-family: "Overpass", sans-serif;
+    font-size: 16px;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid variable.$light-bg;
+    border-radius: 0;
+    outline: none;
+
+    transition:
+      border-color 200ms ease,
+      background-color 200ms ease;
+  }
+
+  textarea {
+    min-height: 135px;
+    resize: vertical;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: variable.$light-bg;
+    opacity: 0.8;
+  }
+
+  input:hover,
+  textarea:hover,
+  input:focus,
+  textarea:focus {
+    border-bottom-color: variable.$highlight;
+    background-color: rgb(255 255 255 / 4%);
+  }
+}
+
+.form-field__errors {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  margin-top: 7px;
+
+  color: variable.$highlight;
+  font-size: 16px;
+}
+
+.privacy-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  input {
+    flex: 0 0 auto;
+
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+
+    accent-color: variable.$highlight;
+  }
+
+  label {
+    color: variable.$light-bg;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  a {
+    color: variable.$highlight;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.privacy-field__error,
+.contact__server-error {
+  margin: -12px 0 0;
+
+  color: variable.$highlight;
+  font-size: 16px;
+}
+
+.contact__submit {
+  align-self: center;
+
+  min-width: 220px;
+  padding: 15px 30px;
+
+  color: variable.$light-bg;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid variable.$light-bg;
+
+  transition:
+    color 200ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease,
+    transform 200ms ease;
+
+  &:not(:disabled):hover {
+    color: #000;
+    background-color: variable.$highlight;
+    border-color: variable.$highlight;
+
+    transform: translateY(-3px);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
+}
+
+.contact__success {
+  margin: 0;
+
+  color: variable.$highlight;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact__back-to-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  color: variable.$light-bg;
+  font-family: "Overpass", sans-serif;
+  font-size: 52px;
+  line-height: 1;
+  text-decoration: none;
+
+  transition:
+    color 200ms ease,
+    transform 200ms ease;
+
+  &:hover {
+    color: variable.$highlight;
+    transform: translateY(-8px);
+  }
+}

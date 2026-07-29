@@ -1,12 +1,12 @@
 .hero {
   position: relative;
 
-//   min-height: calc(100dvh - 92px);
+    min-height: calc(100dvh - 92px);
   //   overflow: hidden;
   max-width: 1240px;
   height: 700px;
 
-   margin: 0 auto;
+  margin: 0 auto;
 
   color: #000;
   background-color: transparent;
@@ -113,7 +113,7 @@
 .hero__email {
   position: absolute;
   bottom: 2px;
-//   left: 40px;
+  left: 30px;
 
   color: #000;
   font-family: Overpass;
