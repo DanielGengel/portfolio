@@ -8,10 +8,10 @@
   </header>
 
   <div class="portfolio__projects">
-    @for (project of projects; track project.title) {
+    @for (project of projects; track project.title; let index = $index, count = $count){
       <article class="project" [class.project--reverse]="$index % 2 === 1" tabindex="0">
         <span class="project__number">
-          {{ project.number }}
+          {{ index+1 }}/{{count}}
         </span>
 
         <div class="project__media">

@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 export class PortfolioComponent {
   readonly projects = [
     {
-      number: '01/03',
       title: 'Join',
       image: 'assets/images/join.png',
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
@@ -18,7 +17,6 @@ export class PortfolioComponent {
       github: 'https://github.com/mein-name/join',
     },
     {
-      number: '02/03',
       title: 'El Pollo Loco',
       image: 'assets/images/el-pollo-loco.png',
       technologies: ['JavaScript', 'HTML', 'CSS'],
@@ -27,7 +25,6 @@ export class PortfolioComponent {
       github: 'https://github.com/mein-name/pollo-loco',
     },
     {
-      number: '03/03',
       title: 'DABubble',
       image: 'assets/images/da-bubble.png',
       technologies: ['Angular', 'TypeScript', 'Firebase', 'SCSS'],
