@@ -1,1 +1,40 @@
-<p>references-component works!</p>
+<section id="references" class="references">
+  <header class="references__header">
+    <h2 class="section-title references__title">
+      References
+    </h2>
+
+    <p class="references__intro">
+      I thrive both independently and as part of a team.
+      Here’s what my colleagues have to say about working with me.
+    </p>
+  </header>
+
+  <div class="references__list">
+    @for (reference of references; track reference.name) {
+      <blockquote class="reference-card" tabindex="0">
+        
+        <div class="reference-card__header">
+          <span
+            class="reference-card__quote-mark"
+            aria-hidden="true"
+          >
+            ”
+          </span>
+
+          <cite class="reference-card__name">
+            {{ reference.name }}
+          </cite>
+
+          <span class="reference-card__position">
+            {{ reference.position }}
+          </span>
+        </div>
+
+        <p class="reference-card__text">
+          {{ reference.quote }}
+        </p>
+      </blockquote>
+    }
+  </div>
+</section>
