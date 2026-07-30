@@ -19,6 +19,11 @@ export class ContactComponent {
       validators: [
         Validators.required,
         Validators.email,
+        // [^\s@]+ → at least one character
+        // @ → after that @ neccesarry
+        // [^\s@]+ → at least one chracter for domain
+        // \. → dot neccesarry
+        // [^\s@]{2,} → at least 2 characters after dot
         Validators.pattern(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/),
       ],
     }),
