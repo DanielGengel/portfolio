@@ -1,6 +1,6 @@
-@use './app/styles/main';
-@use './app/styles/variables' as variable;
-
+@use '../public/assets/styles/main';
+// @use '../public/assets/styles';
+@use '../public/assets/styles/variables' as variable;
 
 * {
     margin: 0;
@@ -17,10 +17,8 @@
     border: initial;
 }
 
-
-
 body {
-  margin: 0;
+  margin: 0; 
 
   // Global background color and dotted pattern
   background-color: #fffcf5;

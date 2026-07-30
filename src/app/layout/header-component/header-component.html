@@ -1,38 +1,40 @@
 <header class="header">
-  <a class="logo" routerLink="/" aria-label="DG – Home" (click)="closeMenu()">
-    <span class="logo__symbol" aria-hidden="true">
-      <span class="logo__bracket logo__bracket--left"></span>
-      <span class="logo__letter logo__letter--d">D</span>
-      <span class="logo__letter logo__letter--b">/</span>
-      <span class="logo__letter logo__letter--g">G</span>
-      <span class="logo__bracket logo__bracket--right"></span>
-    </span>
-  </a>
+  <div class="header__content">
+    <a class="logo" routerLink="/" aria-label="DG – Home" (click)="closeMenu()">
+      <span class="logo__symbol" aria-hidden="true">
+        <span class="logo__bracket logo__bracket--left"></span>
+        <span class="logo__letter logo__letter--d">D</span>
+        <span class="logo__letter logo__letter--b">/</span>
+        <span class="logo__letter logo__letter--g">G</span>
+        <span class="logo__bracket logo__bracket--right"></span>
+      </span>
+    </a>
 
-  <div class="header-right">
-    <div class="languages">
-      <button type="button" [class.active]="language() === 'en'" (click)="changeLanguage('en')">
-        EN
-      </button>
+    <div class="header-right">
+      <div class="languages">
+        <button type="button" [class.active]="language() === 'en'" (click)="changeLanguage('en')">
+          EN
+        </button>
 
-      <button type="button" [class.active]="language() === 'de'" (click)="changeLanguage('de')">
-        DE
+        <button type="button" [class.active]="language() === 'de'" (click)="changeLanguage('de')">
+          DE
+        </button>
+      </div>
+
+      <button
+        #menuButton
+        class="burger"
+        type="button"
+        aria-label="Menü öffnen oder schließen"
+        [attr.aria-expanded]="menuOpen()"
+        aria-controls="main-menu"
+        (click)="toggleMenu()"
+      >
+        <span [class.open]="menuOpen()"></span>
+        <span [class.open]="menuOpen()"></span>
+        <span [class.open]="menuOpen()"></span>
       </button>
     </div>
-
-    <button
-      #menuButton
-      class="burger"
-      type="button"
-      aria-label="Menü öffnen oder schließen"
-      [attr.aria-expanded]="menuOpen()"
-      aria-controls="main-menu"
-      (click)="toggleMenu()"
-    >
-      <span [class.open]="menuOpen()"></span>
-      <span [class.open]="menuOpen()"></span>
-      <span [class.open]="menuOpen()"></span>
-    </button>
   </div>
 </header>
 
