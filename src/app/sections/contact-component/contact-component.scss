@@ -5,6 +5,7 @@
   height: 850px;
   padding-top: 130px;
 
+  // background-color: red;
   background-image: url("/assets/images/contact-form-shape.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -28,127 +29,170 @@
   line-height: 1;
 }
 
-.contact__form-area {
-  width: min(100%, 560px);
-  margin-inline: auto;
-
-  font-family: 'Overpass', sans-serif;
+.contact__intro {
+  width: min(100%, 508px);
+  margin: 50px auto 18px;
+  text-align: center;
 
   h3 {
-    margin: 0 0 14px;
+    margin: 0;
 
-    color: variable.$highlight;
-    font-size: clamp(20px, 2.5vw, 27px);
+    font-family: 'Overpass', sans-serif;
+    font-size: 26px;
     font-weight: 700;
-    text-align: center;
+    color: variable.$highlight;
+  }
+
+  p {
+    display: none;
   }
 }
 
-.contact__intro {
-  margin: 0 0 32px;
-
-  color: variable.$light-bg;
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
-}
-
 .contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  width: min(100%, 508px);
+  margin-inline: auto;
 }
 
+/* Input fields with label and state */
 .form-field {
   position: relative;
+  margin-bottom: 16px;
 
   label {
     position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: 14px;
 
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
+    padding-inline: 3px;
 
-    overflow: hidden;
-    white-space: nowrap;
-
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    color: variable.$light-bg;
+    background-color: #000;
   }
 
   input,
   textarea {
+    display: block;
     width: 100%;
-    padding: 12px 14px;
-
     box-sizing: border-box;
 
-    color: variable.$light-bg;
+    padding: 14px 45px 12px 20px;
+
     font-family: 'Overpass', sans-serif;
     font-size: 16px;
+    color: variable.$light-bg;
 
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid variable.$light-bg;
+    background: transparent;
+    border: 2px solid variable.$light-bg;
     border-radius: 0;
     outline: none;
 
-    transition:
-      border-color 200ms ease,
-      background-color 200ms ease;
+    transition: border-color 150ms ease;
+  }
+
+  input {
+    height: 42px;
   }
 
   textarea {
-    min-height: 135px;
+    min-height: 166px;
+    padding-top: 14px;
     resize: vertical;
   }
 
-  input::placeholder,
-  textarea::placeholder {
-    color: variable.$light-bg;
-    opacity: 0.8;
-  }
-
   input:hover,
-  textarea:hover,
   input:focus,
+  textarea:hover,
   textarea:focus {
-    border-bottom-color: variable.$highlight;
-    background-color: rgb(255 255 255 / 4%);
+    border-color: variable.$highlight;
   }
 }
 
-.form-field__errors {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+/* Kreis für das Statussymbol */
+.form-field:has(.ng-touched.ng-valid)::after,
+.form-field:has(.ng-touched.ng-invalid)::after {
+  position: absolute;
+  top: 11px;
+  right: 19px;
 
-  margin-top: 7px;
+  display: grid;
+  place-items: center;
 
-  color: variable.$highlight;
+  width: 21px;
+  height: 21px;
+
+  font-family: Arial, sans-serif;
   font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+  color: #000;
+
+  border-radius: 50%;
+}
+
+/* Grüner Haken */
+.form-field:has(.ng-touched.ng-valid)::after {
+  content: '✓';
+  background-color: #70e000;
+}
+
+/* Rotes Ausrufezeichen */
+.form-field:has(.ng-touched.ng-invalid)::after {
+  content: '!';
+  color: #000;
+  background-color: #e91e4d;
+}
+
+/* Statussymbol beim Textfeld ebenfalls oben */
+.form-field:has(textarea.ng-touched)::after {
+  top: 12px;
+}
+
+.form-field input.ng-touched.ng-invalid,
+.form-field textarea.ng-touched.ng-invalid {
+  border-color: variable.$light-bg;
+}
+
+.form-error {
+  margin: 7px 0 0;
+
+  font-family: 'Overpass', sans-serif;
+  font-size: 12px;
+  color: #e91e4d;
 }
 
 .privacy-field {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 9px;
+
+  margin-top: 16px;
 
   input {
-    flex: 0 0 auto;
+    flex-shrink: 0;
 
-    width: 18px;
-    height: 18px;
-    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    margin: 0;
 
-    accent-color: variable.$highlight;
+    cursor: pointer;
+    appearance: none;
+    background: transparent;
+    border: 2px solid variable.$light-bg;
+
+    &:checked {
+      background-color: variable.$highlight;
+      box-shadow: inset 0 0 0 3px #000;
+    }
   }
 
   label {
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
     color: variable.$light-bg;
-    font-size: 16px;
-    line-height: 1.4;
   }
 
   a {
@@ -161,74 +205,65 @@
   }
 }
 
-.privacy-field__error,
-.contact__server-error {
-  margin: -12px 0 0;
-
-  color: variable.$highlight;
-  font-size: 16px;
-}
-
-.contact__submit {
-  align-self: center;
+.contact__form button {
+  display: block;
 
   min-width: 220px;
-  padding: 15px 30px;
+  margin: 36px auto 0;
+  padding: 14px 28px;
 
-  color: variable.$light-bg;
   font-family: 'Overpass', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  color: variable.$light-bg;
 
   cursor: pointer;
-  background-color: transparent;
-  border: 2px solid variable.$light-bg;
+  background: transparent;
+  border: 3px solid variable.$light-bg;
 
   transition:
-    color 200ms ease,
-    border-color 200ms ease,
-    background-color 200ms ease,
-    transform 200ms ease;
-
-  &:not(:disabled):hover {
-    color: #000;
-    background-color: variable.$highlight;
-    border-color: variable.$highlight;
-
-    transform: translateY(-3px);
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.45;
-  }
-}
-
-.contact__success {
-  margin: 0;
-
-  color: variable.$highlight;
-  font-size: 16px;
-  text-align: center;
-}
-
-.contact__back-to-top {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  padding-right: 20px;
-  color: variable.$light-bg;
-  font-family: 'Overpass', sans-serif;
-  font-size: 52px;
-  line-height: 1;
-  text-decoration: none;
-
-  transition:
-    color 200ms ease,
-    transform 200ms ease;
+    color 150ms ease,
+    border-color 150ms ease,
+    transform 150ms ease;
 
   &:hover {
     color: variable.$highlight;
-    transform: translateY(-8px);
+    border-color: variable.$highlight;
+    transform: scale(1.03);
+  }
+}
+
+/* Ungültiges Formular: Button wie im Screenshot grau */
+.contact__form:has(.ng-invalid) button {
+  color: #666;
+  border-color: #666;
+}
+
+.contact__form:has(.ng-invalid) button:hover {
+  transform: none;
+  color: #666;
+  border-color: #666;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    min-height: 700px;
+    padding: 70px 20px;
+    background-size: auto 100%;
+  }
+
+  .contact__title {
+    font-size: 56px;
+  }
+
+  .contact__intro {
+    margin-top: 45px;
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+
+  .contact__form button {
+    width: 100%;
   }
 }

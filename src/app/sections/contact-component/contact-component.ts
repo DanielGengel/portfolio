@@ -1,102 +1,51 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { email, form, FormField, FormRoot, minLength, required } from '@angular/forms/signals';
-
-interface ContactData {
-  name: string;
-  email: string;
-  message: string;
-  privacyAccepted: boolean;
-}
+import { Component } from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-component',
-  imports: [FormField, FormRoot, RouterLink],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact-component.html',
   styleUrl: './contact-component.scss',
 })
 export class ContactComponent {
-  private readonly initialModel: ContactData = {
-    name: '',
-    email: '',
-    message: '',
-    privacyAccepted: false,
-  };
+  contactForm = new FormGroup({
+    name: new FormControl('', {
+      nonNullable: true,
+      validators: [Validators.required, Validators.minLength(3)],
+    }),
 
-  readonly messageSent = signal(false);
+    email: new FormControl('', {
+      nonNullable: true,
+      validators: [
+        Validators.required,
+        Validators.email,
+        Validators.pattern(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/),
+      ],
+    }),
 
-  readonly contactModel = signal<ContactData>({
-    ...this.initialModel,
+    message: new FormControl('', {
+      nonNullable: true,
+      validators: [Validators.required, Validators.minLength(10)],
+    }),
+
+    privacyAccepted: new FormControl(false, {
+      nonNullable: true,
+      validators: [Validators.requiredTrue],
+    }),
   });
 
-  readonly contactForm = form(
-    this.contactModel,
+  onSubmit(): void {
+    if (this.contactForm.invalid) {
+      this.contactForm.markAllAsTouched();
+      return;
+    }
 
-    // Validierung
-    (path) => {
-      required(path.name, {
-        message: 'Please enter your name.',
-      });
+    const formData = this.contactForm.getRawValue();
 
-      required(path.email, {
-        message: 'Please enter your email.',
-      });
+    console.log(formData);
 
-      email(path.email, {
-        message: 'Please enter a valid email address.',
-      });
+    // Send data...
 
-      required(path.message, {
-        message: 'Please enter a message.',
-      });
-
-      minLength(path.message, 10, {
-        message: 'Your message must contain at least 10 characters.',
-      });
-
-      required(path.privacyAccepted, {
-        message: 'Please accept the privacy policy.',
-      });
-    },
-
-    // Formular absenden
-    {
-      submission: {
-        action: async (field) => {
-          this.messageSent.set(false);
-
-          try {
-            const response = await fetch('/api/contact', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(field().value()),
-            });
-
-            if (!response.ok) {
-              return {
-                kind: 'serverError',
-                message: 'Your message could not be sent. Please try again.',
-              };
-            }
-
-            this.messageSent.set(true);
-
-            // Werte sowie touched/dirty zurücksetzen
-            field().reset({
-              ...this.initialModel,
-            });
-
-            return;
-          } catch {
-            return {
-              kind: 'serverError',
-              message: 'The server is currently unavailable. Please try again later.',
-            };
-          }
-        },
-      },
-    },
-  );
+    this.contactForm.reset();
+  }
 }
