@@ -1,11 +1,50 @@
 @use '../../../../public/assets/styles/variables' as variable;
 
-.footer {
-  width: 100%;
+// .footer {
+//   width: 100%;
+//   // top: -50;
+//   // min-height: 224px;
+//   //   color: var(--inverse-text, #fff);
+//   background-color: variable.$logo-color-dark;
+//   //   border: 1px solid var(--inverse-border, #fff);
 
-  //   color: var(--inverse-text, #fff);
-  background-color: variable.$logo-color-dark;
-  //   border: 1px solid var(--inverse-border, #fff);
+//   margin-top: -50px;
+// // min-height: 20px;
+//   background-color: transparent;
+//   background-image: url('/assets/images/contact-form-shape.png');
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   background-size: 100% 100%;
+// }
+
+.footer {
+  // position: relative;
+  // z-index: 1;
+
+  // width: 100%;
+  // min-height: 180px;
+  // margin-top: -50px;
+
+  // color: white;
+  // background-color: variable.$logo-color-dark;
+}
+
+
+.footer::before {
+  position: absolute;
+  // z-index: -1;
+  top: -50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  // background-color: variable.$logo-color-dark;
+  background-image: url("/assets/images/footer-shape.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
 }
 
 .footer__content {
@@ -13,10 +52,10 @@
   align-items: center;
   justify-content: space-between;
 
-  width: min(calc(100% - 40px), 1240px);
-  min-height: 110px;
+  width: 1240px;
+  min-height: 180px;
   margin-inline: auto;
-  padding-block: 22px;
+  // padding-block: 22px;
 }
 
 .footer__branding {
