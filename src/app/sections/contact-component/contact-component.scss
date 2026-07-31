@@ -1,4 +1,4 @@
-@use '../../../../public/assets/styles/variables' as variable;
+@use '../../../../public/styles/variables' as variable;
 
 .contact {
   width: 100%;
@@ -6,7 +6,7 @@
   padding-top: 130px;
 
   // background-color: red;
-  background-image: url("/assets/images/contact-form-shape.png");
+  background-image: url('/assets/images/contact-form-shape.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1240px 100%;
