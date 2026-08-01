@@ -1,52 +1,43 @@
-:host {
-  // display: block;
-
-  // max-width: 1240px;
-  // margin: 0 auto;
-  // height: 300px;
-  // padding-top: 120px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-}
-
 .arrow-section {
-  // position: relative;
-  // margin: 0 auto;
-
-  display: block;
-
   max-width: 1240px;
   margin: 0 auto;
   height: 300px;
 
-  // width: 100%;
-  // height: 100%;
+  // Hide parts of the arrow outside the section
   overflow: hidden;
-  // background: red;
 }
 
 .arrow {
+  // Variables control how far the arrow moves sideways and downwards
+  --move-x: 170px;
+  --move-y: 170px;
+
   position: absolute;
   top: 40px;
 
   width: 250px;
   height: 2px;
 
+  // The arrow is hidden before the animation starts.
   opacity: 0;
 }
 
+// Places the arrow on the right side.
 .arrow--from-right {
   right: 0;
 }
 
+// Places the arrow on the left side.
 .arrow--from-left {
   left: 0;
 }
 
+// Moves the right arrow down and to the left...
 .arrow--from-right.arrow--active {
   animation: move-down-left 1s ease-out forwards;
 }
 
+// Moves the left arrow down and to the right...
 .arrow--from-left.arrow--active {
   animation: move-down-right 1s ease-out forwards;
 }
@@ -60,7 +51,7 @@
   // width: 80px;
   height: 80px;
 
-  // Lange diagonale Linie
+  // Long diagonal arrow line
   &::before {
     position: absolute;
     bottom: 10px;
@@ -72,11 +63,14 @@
     content: '';
     background-color: #000;
 
+    // Turns the line into a diagonal line
     transform: rotate(-45deg);
+
+    // The line rotates from its left side
     transform-origin: left center;
   }
 
-  // Pfeilspitze
+  // Arrowhead.
   &::after {
     position: absolute;
     bottom: 10px;
@@ -91,10 +85,13 @@
   }
 }
 
+// Mirrors the arrow so that it points in the other direction
 .arrow__shape--mirrored {
   transform: scaleX(-1);
 }
 
+// Starts at the original position.
+// Then moves the arrow to the left and downwards
 @keyframes move-down-left {
   from {
     opacity: 1;
@@ -103,10 +100,12 @@
 
   to {
     opacity: 1;
-    transform: translate(-180px, 180px);
+    transform: translate(calc(-1 * var(--move-x)), var(--move-y));
   }
 }
 
+// Starts at the original position.
+// Then moves the arrow to the right and down
 @keyframes move-down-right {
   from {
     opacity: 1;
@@ -115,14 +114,18 @@
 
   to {
     opacity: 1;
-    transform: translate(180px, 180px);
+    transform: translate(var(--move-x), var(--move-y));
   }
 }
 
+// Starts shortening the arrow line after 600ms.
+// The shortening takes 500ms.
+// "forwards" keeps the shorter line after the animation visible
 .arrow.arrow--active .arrow__shape::before {
   animation: shorten-arrow 500ms ease-out 600ms forwards;
 }
 
+// Makes the arrow line shorter
 @keyframes shorten-arrow {
   from {
     width: 300px;
@@ -130,5 +133,55 @@
 
   to {
     width: 180px;
+  }
+}
+
+// Makes the arrow smaller on screens up to 900px
+@media (max-width: 900px) {
+  .arrow-section {
+    height: 220px;
+  }
+
+  .arrow {
+    top: 30px;
+
+    // The smaller arrow travels a shorter distance...
+    --move-x: 150px;
+    --move-y: 150px;
+  }
+
+  // Makes the arrow half its original size
+  .arrow__shape {
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+
+  // Mirrors the arrow and makes it half its original size
+  .arrow__shape--mirrored {
+    transform: scaleX(-1) scale(0.5);
+    transform-origin: top center;
+  }
+}
+
+// Adjusts the arrow position and movement on small screens.
+@media (max-width: 480px) {
+
+  .arrow {
+    top: 60px;
+
+    // The arrow "travel" distance
+    --move-x: 120px;
+    --move-y: 120px;
+  }
+}
+
+// Adjusts the arrow again on very small screens.
+@media (max-width: 360px) {
+  .arrow {
+    top: 80px;
+
+    // The arrow "travel" distance
+    --move-x: 90px;
+    --move-y: 90px;
   }
 }
