@@ -1,18 +1,28 @@
 {
-    "demo.title": "Dies ist eine Übersetzung",
-    "demo.simple" : "Dies ist ein Test",
+  "demo.title": "Dies ist eine Übersetzung",
+  "demo.simple": "Dies ist ein Test",
 
-    "skills" : {
-        "title" : "Meine Fähigkeiten",
-        "javaScript": "Ich bin <b>Profi</b> in JavaScript"
-    },
+  "header-menu": {
+    "about": "Über mich",
+    "skills": "Meine Skills",
+    "hi": "Sag Hi!"
+  },
 
-    "about" : {
-        "text": "Schreiben Sie einige Informationen über sich selbst auf, die sich auf die IT beziehen. Warum haben Sie eine Leidenschaft für das Programmieren? Zeigen Sie den Wunsch, neue Technologien zu erlernen.",
-        "text2": "Fügen Sie eine kurze Beschreibung Ihres Problemlösungsansatzes hinzu. Sie können Eigenschaften wie analytisches Denken, Kreativität, Beharrlichkeit und Zusammenarbeit einbeziehen."
-    }
+  "hero": {
+    "developer": "Entwickler"
+  },
+
+  "about": {
+    "text": "Schreiben Sie einige Informationen über sich selbst auf, die sich auf die IT beziehen. Warum haben Sie eine Leidenschaft für das Programmieren? Zeigen Sie den Wunsch, neue Technologien zu erlernen.",
+    "text2": "Fügen Sie eine kurze Beschreibung Ihres Problemlösungsansatzes hinzu. Sie können Eigenschaften wie analytisches Denken, Kreativität, Beharrlichkeit und Zusammenarbeit einbeziehen.",
+    "base": "Kaufbeuren, Kempten, Memmingen, weltweit",
+    "remote": "Bereit für Remote Work",
+    "button": "Kontaktiere mich"
+  },
+
+  "skills": {
+    "skill": "Eine bestimmte Fähigkeit nicht gefunden?",
+    "contact": " Kontaktiere mich bitte!",
+     "ready": " Ich bin jederzeit bereit dazuzulernen und zu helfen!"
+  }
 }
-
-
-
-

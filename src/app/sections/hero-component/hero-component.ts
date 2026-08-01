@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero-component',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './hero-component.html',
   styleUrl: './hero-component.scss',
 })
-export class HeroComponent {}
+export class HeroComponent {
+
+   private translate = inject(TranslateService);
+
+}

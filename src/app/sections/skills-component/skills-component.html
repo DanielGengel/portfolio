@@ -1,6 +1,6 @@
 <section class="skills section__container">
   <div class="skills__container">
-    <h2 class="section-title skills__title">My skills</h2>
+    <h2 class="section-title skills__title">{{ 'header-menu.skills' | translate }}</h2>
 
     <div class="skills__grid">
       @for (skill of skills; track skill.name) {
@@ -18,11 +18,11 @@
       <img class="skills__learning-icon" src="assets/icons/learn-icon.png" alt="" />
 
       <p>
-        <span>Don’t see the skill you need?</span>
+        <span>{{ 'skills.skill' | translate }}</span>
 
-        <a href="#contact"> Contact me </a>
+        <a href="#contact">{{ 'skills.contact' | translate }}</a>
 
-        <span>I’m always ready to learn!</span>
+        <span>{{ 'skills.ready' | translate }}</span>
       </p>
     </div>
   </div>

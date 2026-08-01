@@ -54,16 +54,16 @@
   aria-label="Hauptnavigation"
 >
   <div class="menu__links">
-    <a class="menu__link" routerLink="/" fragment="about" (click)="closeMenu()"> About me </a>
+    <a class="menu__link" routerLink="/" fragment="about" (click)="closeMenu()"> {{ 'header-menu.about' | translate }} </a>
 
-    <a class="menu__link" routerLink="/" fragment="skills" (click)="closeMenu()"> My skills </a>
+    <a class="menu__link" routerLink="/" fragment="skills" (click)="closeMenu()"> {{ 'header-menu.skills' | translate }} </a>
 
     <a class="menu__link" routerLink="/" fragment="portfolio" (click)="closeMenu()"> Portfolio </a>
   </div>
 
   <div class="menu__bottom">
     <div class="menu__contact">
-      <strong>Say Hi!</strong>
+      <strong>{{ 'header-menu.hi' | translate }}</strong>
 
       <a href="mailto:stefan@gmail.com"> stefan&#64;gmail.com </a>
     </div>

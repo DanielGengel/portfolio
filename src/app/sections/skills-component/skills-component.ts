@@ -1,13 +1,16 @@
-
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills-component',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './skills-component.html',
   styleUrl: './skills-component.scss'
 })
 export class SkillsComponent {
+
+  private translate = inject(TranslateService);
+
   readonly skills = [
     {
       name: 'Angular',

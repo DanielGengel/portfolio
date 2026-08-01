@@ -38,12 +38,12 @@
 }
 
 .header__content {
-  max-width: 1240px;
+  max-width: 1440px;
   height: 92px;
-  // padding: 0 45px;
-
-  // padding-left: 20px;
-  // padding-right: 20px;
+  
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
 
   position: fixed;
   z-index: 1000;

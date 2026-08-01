@@ -9,41 +9,63 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './header-component.scss',
 })
 export class HeaderComponent {
+  // Gives this component access to the translation service.
+  private translate = inject(TranslateService);
+
+  // Saves whether the mobile menu is open or closed.
   menuOpen = signal(false);
+
+  // Saves the currently selected language.
+  // English is used as the default language.
   language = signal<'de' | 'en'>('en');
 
-  // toggleMenu(): void {
-  //   this.menuOpen.update((open) => !open);
-  // }
+  constructor() {
+    // localStorage is only available inside the browser.
+    if (typeof window !== 'undefined') {
+      // Gets the saved language from the browser.
+      const savedLanguage = localStorage.getItem('language');
 
-  // closeMenu(menuButton?: HTMLButtonElement): void {
-  //   menuButton?.focus();
-  //   this.menuOpen.set(false);
-  // }
+      // Only accepts German or English.
+      if (savedLanguage === 'de' || savedLanguage === 'en') {
+        this.language.set(savedLanguage);
+      }
+    }
 
+    // Starts the translation service with the selected language.
+    this.translate.use(this.language());
+  }
+
+  // Opens the menu when it is closed.
+  // Closes the menu when it is open.
   toggleMenu(): void {
     const menuWillOpen = !this.menuOpen();
 
     this.menuOpen.set(menuWillOpen);
 
+    // Stops the page from scrolling while the menu is open.
     document.body.style.overflow = menuWillOpen ? 'hidden' : '';
   }
 
+  // Closes the menu.
   closeMenu(): void {
     this.menuOpen.set(false);
+
+    // Allows the page to scroll again.
     document.body.style.overflow = '';
   }
 
-  private translate = inject(TranslateService);
-
+  // Changes the current language...
   changeLanguage(language: 'de' | 'en'): void {
+    // Updates the language signal...
     this.language.set(language);
+
+    // Shows the translations for the selected language
     this.translate.use(language);
+
+    // localStorage is only available inside the browser.
+    if (typeof window !== 'undefined') {
+      // Saves the language so it remains selected after a reload.
+      localStorage.setItem('language', language);
+    }
   }
-
-  // private translate = inject(TranslateService);
-
-  // useLanguage(language: string): void {
-  //     this.translate.use(language);
-  // }
 }
