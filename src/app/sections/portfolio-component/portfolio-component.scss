@@ -1,31 +1,19 @@
-
-
-
 .portfolio {
-
-  // min-height: 30dvh;
-  // margin: 0 auto;
-  padding: clamp(60px, 8vw, 100px) 24px 140px;
-
-  // color: #000;
-  // background-color: transparent;
+ 
+  padding-top: 30px;
 }
 
-
-.portfolio__container {
-  width: min(calc(100% - 40px), 1240px);
-  margin-inline: auto;
-}
 
 .portfolio__intro {
+  //  scroll-margin-top: 192px;
   min-height: 270px;
-  padding: 40px 20px;
+  // padding: 20px 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  box-sizing: border-box;
+  // box-sizing: border-box;
   text-align: center;
 }
 
@@ -36,8 +24,10 @@
 .portfolio__description {
   max-width: 520px;
   margin: 0;
+font-family: Overpass;
 
-  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 400;
+  font-size: 22px;
   line-height: 1.25;
 }
 
@@ -58,7 +48,7 @@
   gap: clamp(60px, 8vw, 120px);
 
   min-height: 480px;
-  padding: 55px 40px;
+  // padding: 55px 40px;
 
   box-sizing: border-box;
   outline: none;
@@ -69,10 +59,7 @@
   top: 20px;
   right: 20px;
 
-  font-family:
-    Arial Black,
-    Arial,
-    sans-serif;
+  font-family: Overpass;
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 900;
 }
@@ -96,7 +83,7 @@
   z-index: 2;
   inset: 22px -18px -18px 22px;
 
-  content: "";
+  content: '';
   pointer-events: none;
 
   border: 3px solid #000;
@@ -300,10 +287,6 @@
 }
 
 @media (max-width: 800px) {
-  .portfolio {
-    width: min(calc(100% - 30px), 1240px);
-  }
-
   .portfolio__intro {
     min-height: 230px;
     padding-inline: 10px;
@@ -363,20 +346,20 @@
     opacity: 1;
   }
 
-//   .project__arrow,
-//   .project--reverse .project__arrow {
-//     opacity: 0;
-//   }
+  //   .project__arrow,
+  //   .project--reverse .project__arrow {
+  //     opacity: 0;
+  //   }
 
-//   .project:hover .project__media::after,
-// .project:focus .project__media::after,
-// .project:focus-within .project__media::after {
-//   opacity: 0;
-// }
+  //   .project:hover .project__media::after,
+  // .project:focus .project__media::after,
+  // .project:focus-within .project__media::after {
+  //   opacity: 0;
+  // }
 
-.project:hover .project__arrow,
-.project:focus .project__arrow,
-.project:focus-within .project__arrow {
-  opacity: 0;
-}
+  .project:hover .project__arrow,
+  .project:focus .project__arrow,
+  .project:focus-within .project__arrow {
+    opacity: 0;
+  }
 }

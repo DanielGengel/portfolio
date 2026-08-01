@@ -65,10 +65,11 @@
 
         <label for="privacy">
           I’ve read the
-          <a href="/privacy-policy">privacy policy</a>
+          <a class="privacy" routerLink="/privacy">privacy policy</a>
           and agree to the processing of my data as outlined.
         </label>
       </div>
+      <a class="footer__privacy" routerLink="/privacy"> Privacy </a>|
 
       @if (
         contactForm.controls.privacyAccepted.touched && contactForm.controls.privacyAccepted.invalid

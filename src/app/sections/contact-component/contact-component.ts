@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-component',
-  imports: [ReactiveFormsModule],
+  imports: [RouterLink, ReactiveFormsModule],
   templateUrl: './contact-component.html',
   styleUrl: './contact-component.scss',
 })

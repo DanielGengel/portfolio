@@ -21,10 +21,21 @@ body {
   margin: 0; 
 
   // Global background color and dotted pattern
-  background-color: #fffcf5;
+  background-color: variable.$light-bg;
   background-image: radial-gradient(circle, rgb(224 150 72 / 30%) 2px, transparent 2px);
   background-size: 80px 80px;
 }
+
+.section__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  background-color: transparent;
+}
+
 
 .section-title {
   margin: 0;

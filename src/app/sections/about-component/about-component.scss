@@ -1,13 +1,9 @@
 .about {
-  position: relative;
+  
 
-  //   width: 1240px;
-  // min-height: 30dvh;
-  // margin: 0 auto;
-  padding: clamp(120px, 8vw, 100px) 24px 140px;
-
-  color: #000;
-  background-color: transparent;
+  
+  padding-top: 50px;
+  
 }
 
 .about__container {
@@ -16,8 +12,8 @@
   align-items: start;
   gap: clamp(50px, 4vw, 100px);
 
-  width: min(100%, 1240px);
-  margin-inline: auto;
+  // width: min(100%, 1440px);
+  // margin-inline: auto;
 }
 
 .about__content {
@@ -106,7 +102,7 @@
 
   img {
     display: block;
-    max-width: 480px;
+    max-width: 550px;
     aspect-ratio: 1 / 1;
 
     object-fit: cover;

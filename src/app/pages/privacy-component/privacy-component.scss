@@ -1,0 +1,56 @@
+@use '../../../../public/styles/variables' as variable;
+
+.privacy-page {
+  max-width: 1440px;
+  min-height: calc(100dvh - 92px);
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  color: variable.$text-color-primary;
+  background: transparent;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h1 {
+  //   margin: 0 0 64px;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(44px, 7vw, 72px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+section {
+  margin-bottom: 34px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  color: variable.$highlight;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+  .privacy-page {
+    width: calc(100% - 32px);
+    padding: 92px 0;
+  }
+
+  h1 {
+    margin-bottom: 44px;
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

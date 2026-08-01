@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './layout/header-component/header-component';
 import { FooterComponent } from './layout/footer-component/footer-component';
 import {TranslatePipe} from '@ngx-translate/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,23 @@ import {TranslatePipe} from '@ngx-translate/core';
 })
 export class App {
   protected readonly title = signal('portfolio');
+
+  constructor(viewportScroller: ViewportScroller) {
+    // If menu links clicked, scroll to 90px above header, to avoid
+    // section heading hiding behind header. 
+    viewportScroller.setOffset([0, 90]);
+  }
 }
+
+
+// import { ViewportScroller } from '@angular/common';
+
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+// })
+// export class AppComponent {
+//   constructor(viewportScroller: ViewportScroller) {
+//     viewportScroller.setOffset([0, 192]);
+//   }
+// }
