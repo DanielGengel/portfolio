@@ -545,10 +545,14 @@
 //   }
 // }
 
-
+@media (max-width: 1260px) {
+  .header__content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 
 @media (max-width: 600px) {
-
   .header {
     height: 64px;
   }
@@ -556,7 +560,6 @@
   .header-right {
     gap: 18px;
   }
-
 
   .menu__links {
     justify-content: flex-start;
@@ -589,8 +592,6 @@
     height: 42%;
     padding: 80px 25px 30px;
   }
-
-
 
   .menu__socials {
     align-self: flex-end;

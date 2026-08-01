@@ -1,14 +1,16 @@
 @use '../../../../public/styles/variables' as variable;
 
 .hero {
-  max-width: 1240px;
+  max-width: 1440px;
   min-height: 95dvh;
   margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .hero__content {
   width: fit-content;
-  max-width: calc(100% - 48px);
+  // max-width: calc(100% - 48px);
 
   margin-inline: auto;
   padding-top: clamp(70px, 14vh, 130px);
@@ -127,9 +129,9 @@
  */
 .scroll-hint {
   position: absolute;
-  right: 1%;
+  right: 7%;
   bottom: 0;
-
+  // padding-right: 100px;
   width: 60px;
   height: 250px;
 
@@ -214,6 +216,17 @@
   }
 }
 
+@media (max-width: 1260px) {
+  .hero {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .scroll-hint {
+    right: 3%;
+  }
+}
+
 @media (max-width: 700px) {
   .hero {
     height: calc(100dvh - 62px);
@@ -243,6 +256,8 @@
     bottom: 25px;
   }
 }
+
+
 
 @media (prefers-reduced-motion: reduce) {
   .scroll-hint__arrow {

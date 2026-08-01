@@ -1,6 +1,6 @@
 .portfolio {
  
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 
@@ -160,6 +160,8 @@ font-family: Overpass;
 /* Textbereich */
 
 .project__content {
+
+  font-family: Overpass;
   opacity: 0;
   transform: translateY(25px);
 
@@ -171,10 +173,7 @@ font-family: Overpass;
 .project__title {
   margin: 0 0 12px;
 
-  font-family:
-    Arial Black,
-    Arial,
-    sans-serif;
+  font-family: Overpass;
   font-size: clamp(38px, 5vw, 64px);
   font-weight: 900;
   line-height: 1;
@@ -194,6 +193,8 @@ font-family: Overpass;
 .project__description {
   max-width: 500px;
   margin: 0 0 25px;
+  
+  font-family: Overpass;
 
   font-size: clamp(14px, 1.5vw, 17px);
   line-height: 1.35;
@@ -205,6 +206,7 @@ font-family: Overpass;
   min-width: 150px;
   padding: 14px 25px;
 
+  font-family: Overpass;
   color: #000;
   font-size: 18px;
   text-align: center;
@@ -240,8 +242,6 @@ font-family: Overpass;
 .project--reverse .project__description {
   margin-left: auto;
 }
-
-/* Hover- und Tastatur-Effekte */
 
 .project:hover .project__image,
 .project:focus .project__image,

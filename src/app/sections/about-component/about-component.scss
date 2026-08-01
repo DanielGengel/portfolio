@@ -1,9 +1,5 @@
 .about {
-  
-
-  
   padding-top: 50px;
-  
 }
 
 .about__container {
@@ -11,9 +7,6 @@
   grid-template-columns: 1fr 1fr;
   align-items: start;
   gap: clamp(50px, 4vw, 100px);
-
-  // width: min(100%, 1440px);
-  // margin-inline: auto;
 }
 
 .about__content {
@@ -29,7 +22,7 @@
 
 .about__text {
   max-width: 620px;
-
+font-family: Overpass;
   font-size: clamp(14px, 1.4vw, 17px);
   line-height: 1.25;
 
@@ -42,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+font-family: Overpass;
   margin: 32px 0 0;
   padding: 0;
 
@@ -64,7 +57,7 @@
 
 .about__button {
   align-self: center;
-
+font-family: Overpass;
   min-width: 165px;
   margin-top: 38px;
   padding: 14px 24px;
@@ -101,12 +94,44 @@
   justify-self: end;
 
   img {
-    display: block;
+    // display: block;
     max-width: 550px;
     aspect-ratio: 1 / 1;
 
     object-fit: cover;
   }
+
+  .about__image::after {
+    position: absolute;
+    z-index: 2;
+    inset: 22px -18px -18px 22px;
+
+    content: '';
+    pointer-events: none;
+
+    border: 3px solid #000;
+    opacity: 1;
+
+    // transition: opacity 400ms ease;
+  }
+}
+
+.about__image::after {
+  position: absolute;
+  z-index: 2;
+  inset: 22px -18px -18px 22px;
+
+  content: '';
+  pointer-events: none;
+
+  border: 3px solid #000;
+  opacity: 0;
+
+  transition: opacity 400ms ease;
+}
+
+.about__image:hover::after {
+  opacity: 1;
 }
 
 // /* Arrow in the bottom-right corner */
