@@ -21,16 +21,3 @@ export class App {
     viewportScroller.setOffset([0, 90]);
   }
 }
-
-
-// import { ViewportScroller } from '@angular/common';
-
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './app.component.html',
-// })
-// export class AppComponent {
-//   constructor(viewportScroller: ViewportScroller) {
-//     viewportScroller.setOffset([0, 192]);
-//   }
-// }
