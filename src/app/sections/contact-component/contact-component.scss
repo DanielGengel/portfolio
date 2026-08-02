@@ -35,15 +35,18 @@
   width: min(100%, 508px);
   margin: 50px auto 18px;
   text-align: center;
-
-  h3 {
-    margin: 0;
-
-    font-family: 'Overpass', sans-serif;
+// font-family: 'Overpass', sans-serif;
     font-size: 32px;
     font-weight: 700;
     color: variable.$highlight;
-  }
+  // h3 {
+  //   margin: 0;
+
+  //   // font-family: 'Overpass', sans-serif;
+  //   font-size: 32px;
+  //   font-weight: 700;
+  //   color: variable.$highlight;
+  // }
 
   p {
     display: none;
@@ -68,7 +71,7 @@
 
     padding-inline: 3px;
 
-    font-family: 'Overpass', sans-serif;
+    // font-family: 'Overpass', sans-serif;
     font-size: 14px;
     color: variable.$light-bg;
     background-color: #000;
@@ -82,7 +85,7 @@
 
     padding: 14px 45px 12px 20px;
 
-    font-family: 'Overpass', sans-serif;
+    // font-family: 'Overpass', sans-serif;
     font-size: 16px;
     color: variable.$light-bg;
 
@@ -160,7 +163,7 @@
 .form-error {
   margin: 7px 0 0;
 
-  font-family: 'Overpass', sans-serif;
+  // font-family: 'Overpass', sans-serif;
   font-size: 12px;
   color: #e91e4d;
 }
@@ -191,7 +194,7 @@
   }
 
   label {
-    font-family: 'Overpass', sans-serif;
+    // font-family: 'Overpass', sans-serif;
     font-size: 12px;
     line-height: 16px;
     color: variable.$light-bg;
@@ -214,7 +217,7 @@
   margin: 36px auto 0;
   padding: 14px 28px;
 
-  font-family: 'Overpass', sans-serif;
+  // font-family: 'Overpass', sans-serif;
   font-size: 18px;
   color: variable.$light-bg;
 

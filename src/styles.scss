@@ -18,7 +18,8 @@
 }
 
 body {
-  margin: 0; 
+  // Globale font, none headings
+  font-family:'Overpass';
 
   // Global background color and dotted pattern
   background-color: variable.$light-bg;
