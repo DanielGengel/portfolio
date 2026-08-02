@@ -51,6 +51,20 @@ export class SkillsComponent {
     {
       name: 'Material Design',
       icon: 'assets/icons/material-icon.png'
-    }
+    },
+    {
+      name: 'SQL',
+      icon: 'assets/icons/sql-icon.png'
+    },
+    {
+      name: 'Cloud',
+      icon: 'assets/icons/cloud-icon.png'
+    },
+    {
+      name: 'Linux',
+      icon: 'assets/icons/linux-icon.png'
+    },
+
+
   ];
 }
