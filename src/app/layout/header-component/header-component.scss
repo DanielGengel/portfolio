@@ -555,6 +555,36 @@
   }
 }
 
+
+@media (max-width: 700px) {
+  .languages {
+    position: fixed;
+    z-index: 1200;
+
+    top: 30px;
+    left: 50%;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    // transform: translate(50, -50%);
+
+    transition:
+      opacity 500ms ease,
+      visibility 500ms ease;
+  }
+
+  // Shows the language buttons when the menu is open.
+  .languages.languages--menu-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+
+
 @media (max-width: 600px) {
   .header {
     height: 64px;

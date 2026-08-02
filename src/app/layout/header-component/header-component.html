@@ -11,7 +11,7 @@
     </a>
 
     <div class="header-right">
-      <div class="languages">
+      <div class="languages" [class.languages--menu-open]="menuOpen()">
         <button type="button" [class.active]="language() === 'en'" (click)="changeLanguage('en')">
           EN
         </button>
