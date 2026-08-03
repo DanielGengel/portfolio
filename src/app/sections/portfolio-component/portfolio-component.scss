@@ -1,8 +1,6 @@
 .portfolio {
- 
   padding-top: 20px;
 }
-
 
 .portfolio__intro {
   //  scroll-margin-top: 192px;
@@ -24,7 +22,7 @@
 .portfolio__description {
   max-width: 520px;
   margin: 0;
-// font-family: Overpass;
+  // font-family: Overpass;
 
   font-weight: 400;
   font-size: 22px;
@@ -160,7 +158,6 @@
 /* Textbereich */
 
 .project__content {
-
   // font-family: Overpass;
   opacity: 0;
   transform: translateY(25px);
@@ -193,11 +190,16 @@
 .project__description {
   max-width: 500px;
   margin: 0 0 25px;
-  
+
   // font-family: Overpass;
 
   font-size: clamp(14px, 1.5vw, 17px);
   line-height: 1.35;
+}
+
+.project__buttons {
+  display: flex;
+  gap: 20px;
 }
 
 .project__button {

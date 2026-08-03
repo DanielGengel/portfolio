@@ -13,8 +13,8 @@
   },
 
   "about": {
-    "text": "Schreiben Sie einige Informationen über sich selbst auf, die sich auf die IT beziehen. Warum haben Sie eine Leidenschaft für das Programmieren? Zeigen Sie den Wunsch, neue Technologien zu erlernen.",
-    "text2": "Fügen Sie eine kurze Beschreibung Ihres Problemlösungsansatzes hinzu. Sie können Eigenschaften wie analytisches Denken, Kreativität, Beharrlichkeit und Zusammenarbeit einbeziehen.",
+    "text": "Ich begeistere mich für Softwareentwicklung, weil sie mir ermöglicht, Technologie, Logik und Kreativität zu verbinden, um reale Probleme zu lösen. Ich bin stets motiviert, neue Technologien kennenzulernen, und arbeite gerne an herausfordernden Projekten, durch die ich mein technisches Wissen erweitern kann.",
+    "text2": "Bei der Lösung von Problemen gehe ich analytisch und lösungsorientiert vor. Ich identifiziere zunächst die Ursache, untersuche verschiedene Möglichkeiten und teste potenzielle Lösungen systematisch. Kreativität hilft mir dabei, über naheliegende Ansätze hinauszudenken, Ausdauer bringt mich auch bei schwierigen Herausforderungen voran und durch Zusammenarbeit profitiere ich von den Erfahrungen und Perspektiven anderer.",
     "base": "Kaufbeuren, Kempten, Memmingen, weltweit",
     "remote": "Bereit für Remote Work",
     "button": "Kontaktiere mich"
@@ -24,5 +24,43 @@
     "skill": "Eine bestimmte Fähigkeit nicht gefunden?",
     "contact": " Kontaktiere mich bitte!",
      "ready": " Ich bin jederzeit bereit dazuzulernen und zu helfen!"
-  }
+  },
+
+  "portfolio": {
+  "intro": "Entdecke hier eine Auswahl meiner Arbeiten und probiere die Projekte aus, um meine Fähigkeiten in Aktion zu erleben.",
+  "project1": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstelle und organisiere Aufgaben per Drag-and-drop und weise ihnen Benutzer und Kategorien zu.",
+  "project2": "Ein Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe dabei, Münzen zu sammeln und den Endgegner zu besiegen."
+},
+
+"references": {
+  "intro": "Ich arbeite sowohl selbstständig als auch im Team erfolgreich. Das sagen meine Kolleginnen und Kollegen über die Zusammenarbeit mit mir.",
+  "ref1": "Mit seinem Organisationstalent und seiner klaren Kommunikation hat Michael wesentlich zum Zusammenhalt des Teams beigetragen. Ohne sein Engagement wären wir nicht so weit gekommen.",
+  "ref2": "Michi war ein hervorragender Teamkollege. Seine positive Einstellung und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreichen konnten.",
+  "ref3": "Die Zusammenarbeit mit Michael war eine große Freude. Er versteht es, Teammitglieder zu motivieren, ihr Bestes zu geben, und bringt stets wertvolle Ideen in gemeinsame Brainstormings ein. Darüber hinaus war er jederzeit ansprechbar, hörte aufmerksam zu und unterstützte andere zuverlässig."
+},
+
+"form": {
+  "hi": "Melde dich!",
+  "intro": "Möchtest du ein neues Projekt besprechen?",
+  "name": "",
+  "error1": "Bitte gib deinen Namen ein.",
+  "error2": "Dein Name muss mindestens drei Zeichen lang sein.",
+  "error3": "Dein Name darf keine Zahlen oder Sonderzeichen enthalten.",
+  "email": "",
+  "error4": "Bitte gib deine E-Mail-Adresse ein.",
+  "error5": "Bitte gib eine vollständige E-Mail-Adresse ein.",
+  "message": "",
+  "error6": "Bitte gib eine Nachricht ein.",
+  "error7": "Deine Nachricht muss mindestens zehn Zeichen lang sein.",
+  "privacy-part1": "Ich habe die ",
+  "privacy-part2": "Datenschutzerklärung",
+  "privacy-part3": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
+  "error8": "Bitte akzeptiere die Datenschutzerklärung.",
+  "button": "Nachricht senden"
+},
+
+"legal": {
+  "privacy": "Datenschutzerklärung",
+  "imprint": "Impressum"
+}
 }

@@ -13,9 +13,9 @@
   },
 
   "about": {
-    "text": "Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.",
-    "text2": "Add a brief description of your problem-solving approach. You can include traits such as analytical thinking, creativity, persistence and collaboration.",
-    "base": "Based close to Kaufbeuren, Kempten, Memmingen",
+    "text": "I am passionate about software development because it enables me to combine technology, logic, and creativity to solve real-world problems. I am eager to learn new technologies and enjoy challenging myself through projects that expand my technical knowledge.",
+    "text2": "My problem-solving approach is analytical and solution-oriented. I identify the cause of a problem, explore different possibilities, and test solutions systematically. Creativity helps me think beyond the obvious, persistence keeps me moving forward, and collaboration helps me benefit from the experience and perspectives of others.",
+    "base": "Kaufbeuren, Kempten, Memmingen, worldwide",
     "remote": "Open to remote work",
     "button": "Let's talk"
   },
@@ -23,6 +23,43 @@
   "skills": {
     "skill": "Don’t see the skill you need?",
     "contact": " Contact me!",
-     "ready": " I’m always ready to learn!"
+    "ready": " I’m always ready to learn!"
+  },
+
+  "portfolio": {
+    "intro": "Explore a selection of my work here – interact with projects to see my skills in action.",
+    "project1": "Task manager inspired by the Kanban system. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "project2": "A jump and run game based on an object-oriented approach. Help Pepe collect coins and defeat the final enemy."
+  },
+
+  "references": {
+    "intro": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+    "ref1": "Michael really kept the team together with his great organization and clear communication. We would not have got this far without his commitment.",
+    "ref2": "Michi was a top team colleague. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+    "ref3": "It was a great pleasure to work with Michael. He knows how to encourage team members to present their best work, always adding something to brainstorm. He was always present and available to listen and help others."
+  },
+
+  "form": {
+    "hi": "Say Hi!",
+    "intro": "Want to discuss a new project?",
+    "name": "",
+    "error1": "Please enter your name.",
+    "error2": "Your name must contain at least 3 characters.",
+    "error3": "The name must not contain numbers or special characters.",
+    "email": "",
+    "error4": "Your email is required.",
+    "error5": "Please enter a complete email address.",
+    "message": "",
+    "error6": "Please enter a message.",
+    "error7": "Your message must contain at least 10 characters.",
+    "privacy-part1": "I’ve read the ",
+    "privacy-part2": " privacy policy ",
+    "privacy-part3": " and agree to the processing of my data as outlined.",
+    "error8": "Please accept the privacy policy.",
+    "button": "Send message"
+  },
+  "legal": {
+    "privacy": "privacy",
+    "imprint": "imprint"
   }
 }
