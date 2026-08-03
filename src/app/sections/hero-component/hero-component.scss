@@ -2,7 +2,7 @@
 
 .hero {
   max-width: 1440px;
-  min-height: 95dvh;
+  min-height: 98dvh;
   margin: 0 auto;
   padding-left: 100px;
   padding-right: 100px;
@@ -181,6 +181,20 @@
   }
 }
 
+
+
+@media (min-width: 1600px) {
+  .hero {
+    min-height: 50dvh;
+  }
+}
+
+@media (min-width: 2200px) {
+  .hero {
+    min-height: 35dvh;
+  }
+}
+
 @media (max-width: 700px) {
   .hero {
     height: calc(100dvh - 62px);
@@ -210,8 +224,6 @@
     bottom: 25px;
   }
 }
-
-
 
 @media (prefers-reduced-motion: reduce) {
   .scroll-hint__arrow {
