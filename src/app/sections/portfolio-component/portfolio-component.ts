@@ -24,8 +24,8 @@ export class PortfolioComponent {
       technologies: ['JavaScript', 'HTML', 'CSS'],
       description:
         'A jump and run game based on an object-oriented approach. Help Pepe collect coins and defeat the final enemy.',
-      github: 'https://github.com/mein-name/pollo-loco',
-      live: 'https://github.com/mein-name/pollo-loco',
+      github: 'https://github.com/DanielGengel/el-pollo-loco',
+      live: 'https://danielgengel.developerakademie.net/el-pollo-loco/',
     },
     // {
     //   title: 'DABubble',

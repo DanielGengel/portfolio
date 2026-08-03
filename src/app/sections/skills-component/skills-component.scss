@@ -3,7 +3,6 @@
 }
 
 .skills__container {
-
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,7 +42,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  column-gap: 30px;
+  column-gap: 20px;
   row-gap: clamp(45px, 6vw, 80px);
 }
 
@@ -70,8 +69,8 @@
 }
 
 .skill__icon {
-  width: clamp(45px, 5vw, 65px);
-  height: clamp(45px, 5vw, 65px);
+  width: 75px;
+  height: 75px;
 
   object-fit: contain;
 }
@@ -157,29 +156,21 @@
   }
 }
 
-// .skills__learning-icon {
-//   width: clamp(45px, 5vw, 75px);
-//   height: clamp(45px, 5vw, 75px);
-
-//   object-fit: contain;
-//   transform-origin: center;
+// @media (max-width: 1000px) {
+//   .skill {
+//     // flex-basis: calc((100% - 30px) / 4);
+//   }
 // }
-
-@media (max-width: 1000px) {
-  .skill {
-    // flex-basis: calc((100% - 30px) / 4);
-  }
-}
 
 @media (max-width: 700px) {
   .skills__grid {
-    column-gap: 40px;
+    // column-gap: 40px;
     row-gap: 20px;
   }
 
   .skill__icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   .skill__name {
@@ -192,16 +183,6 @@
     justify-content: center;
     gap: 8px;
 
-    
-
-    // p span,
-    // p a {
-    //   display: block;
-    //   width: 100%;
-    //   margin: 0;
-
-    //   text-align: center;
-    // }
   }
 
   .skills__learning-icon {
@@ -212,12 +193,10 @@
   }
 }
 
-
-
 @media (max-width: 350px) {
   .skill__icon {
-    width: 85px;
-    height: 85px;
+    width: 45px;
+    height: 45px;
   }
 }
 
