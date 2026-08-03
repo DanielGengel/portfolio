@@ -15,45 +15,135 @@
   </section>
 
   <section>
-    <h2>{{ 'legalPage.contact.title' | translate }}</h2>
-
+    <h2>{{ 'legalPage.acceptance.title' | translate }}</h2>
     <p>
-      {{ 'legalPage.contact.emailLabel' | translate }}
-      <a href="mailto:mail@danielgengel.de"> mail@danielgengel.de</a>
+      {{ 'legalPage.acceptance.beforePortfolio' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.acceptance.afterPortfolio' | translate }}
     </p>
   </section>
 
   <section>
-    <h2>{{ 'legalPage.acceptance.title' | translate }}</h2>
-    <p [innerHTML]="'legalPage.acceptance.text' | translate"></p>
-  </section>
-
-  <section>
     <h2>{{ 'legalPage.scope.title' | translate }}</h2>
-    <p [innerHTML]="'legalPage.scope.text1' | translate"></p>
-    <p [innerHTML]="'legalPage.scope.text2' | translate"></p>
+
+    <p>
+      {{ 'legalPage.scope.text1BeforePortfolio' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.scope.text1BeforeAcademy' | translate }}
+      <a
+        href="https://developerakademie.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'legalPage.links.academyGmbh' | translate }}
+      </a>
+      {{ 'legalPage.scope.text1AfterAcademy' | translate }}
+    </p>
+
+    <p>
+      {{ 'legalPage.scope.text2BeforePortfolio' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.scope.text2BeforeAcademy' | translate }}
+      <a
+        href="https://developerakademie.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'legalPage.links.academyGmbh' | translate }}
+      </a>
+      {{ 'legalPage.scope.text2AfterAcademy' | translate }}
+    </p>
   </section>
 
   <section>
     <h2>{{ 'legalPage.rights.title' | translate }}</h2>
-    <p [innerHTML]="'legalPage.rights.text' | translate"></p>
+    <p>
+      {{ 'legalPage.rights.beforeAcademy' | translate }}
+      <a
+        href="https://developerakademie.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'legalPage.links.academyGmbh' | translate }}
+      </a>
+      {{ 'legalPage.rights.beforePortfolio' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.rights.afterPortfolio' | translate }}
+    </p>
   </section>
 
   <section>
     <h2>{{ 'legalPage.use.title' | translate }}</h2>
-    <p [innerHTML]="'legalPage.use.text' | translate"></p>
+    <p>
+      {{ 'legalPage.use.beforePortfolio1' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.use.afterPortfolio1' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.use.afterPortfolio2' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.use.afterPortfolio3' | translate }}
+    </p>
   </section>
 
   <section>
     <h2>{{ 'legalPage.liability.title' | translate }}</h2>
-    <p [innerHTML]="'legalPage.liability.text' | translate"></p>
+    <p>
+      {{ 'legalPage.liability.beforePortfolio1' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.liability.afterPortfolio1' | translate }}
+      <a
+        href="https://developerakademie.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'legalPage.links.academy' | translate }}
+      </a>
+      {{ 'legalPage.liability.afterAcademy' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.liability.afterPortfolio2' | translate }}
+    </p>
   </section>
 
   <section>
     <h2>{{ 'legalPage.indemnity.title' | translate }}</h2>
-    <p [innerHTML]="'legalPage.indemnity.text' | translate"></p>
+    <p>
+      {{ 'legalPage.indemnity.beforeAcademy' | translate }}
+      <a
+        href="https://developerakademie.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'legalPage.links.academy' | translate }}
+      </a>
+      {{ 'legalPage.indemnity.beforePortfolio' | translate }}
+      <a routerLink="/" fragment="portfolio">
+        {{ 'legalPage.links.portfolio' | translate }}
+      </a>
+      {{ 'legalPage.indemnity.afterPortfolio' | translate }}
+    </p>
   </section>
 
-  <p [innerHTML]="'legalPage.questions' | translate"></p>
+  <p>
+    {{ 'legalPage.questions' | translate }}
+  </p>
+
   <p>{{ 'legalPage.date' | translate }}</p>
 </main>

@@ -65,44 +65,64 @@
 
   "legalPage": {
     "title": "Rechtliche Hinweise",
+    "links": {
+      "portfolio": "Portfolio",
+      "academyGmbh": "Developer Akademie GmbH",
+      "academy": "Developer Akademie"
+    },
     "imprint": {
       "title": "Impressum",
-      "name": "[Vor- und Nachname]",
-      "address": "[Straße und Hausnummer]",
-      "city": "[Postleitzahl und Ort]"
+      "name": "Daniel Gengel",
+      "address": "Buchloer Straße 6",
+      "city": "87656 Germaringen"
     },
     "contact": {
-      "title": "Kontakt",
+      "title": "Erkundung des Boards",
       "emailLabel": "E-Mail:",
-      "email": "[E-Mail-Adresse]"
+      "email": "mail@danielgengel.de"
     },
     "acceptance": {
       "title": "Akzeptanz der Bedingungen",
-      "text": "Durch den Zugriff auf und die Nutzung dieses <a href=\"/#portfolio\">Portfolios</a> (nachfolgend „Produkt“) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Ergänzungen und Änderungen an, die Ihnen gegebenenfalls von Zeit zu Zeit mitgeteilt werden. Wir, die aufgeführten Studierenden, behalten uns vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern."
+      "beforePortfolio": "Durch den Zugriff auf und die Nutzung von ",
+      "afterPortfolio": " (Produkt) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden können, und stimmen diesen zu. Wir, die aufgeführten Studierenden, können die Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung aktualisieren oder ändern."
     },
     "scope": {
-      "title": "Geltungsbereich und Eigentumsrechte am Produkt",
-      "text1": "Dieses <a href=\"/#portfolio\">Portfolio</a> wurde im Rahmen eines Webentwicklungs-Bootcamps bei der <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> als studentisches Projekt entwickelt. Es dient ausschließlich Bildungs- und Demonstrationszwecken und ist nicht für eine umfassende private oder geschäftliche Nutzung vorgesehen. Daher übernehmen wir keine Gewähr für die dauerhafte Verfügbarkeit, Zuverlässigkeit, Richtigkeit oder sonstige Qualitätsmerkmale dieses Produkts.",
-      "text2": "Das Design dieses <a href=\"/#portfolio\">Portfolios</a> ist Eigentum der <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a>. Eine unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist ausdrücklich untersagt."
+      "title": "Geltungsbereich und Eigentum am Produkt",
+      "text1BeforePortfolio": "",
+      "text1BeforeAcademy": " wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp bei der ",
+      "text1AfterAcademy": " entwickelt. Es dient Bildungszwecken und ist nicht für eine umfassende private oder geschäftliche Nutzung vorgesehen. Daher können wir keine gleichbleibende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsmerkmale dieses Produkts gewährleisten.",
+      "text2BeforePortfolio": "Das Design von ",
+      "text2BeforeAcademy": " ist Eigentum der ",
+      "text2AfterAcademy": ". Die unbefugte Nutzung, Vervielfältigung, Änderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt."
     },
     "rights": {
-      "title": "Schutz- und Eigentumsrechte",
-      "text": "Mit Ausnahme des Designs, das Eigentum der <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> ist, behalten wir, die aufgeführten Studierenden, sämtliche Schutz- und Eigentumsrechte an diesem <a href=\"/#portfolio\">Portfolio</a>. Dies umfasst insbesondere urheberrechtlich geschützte Inhalte, Marken und sonstige geschützte Informationen."
+      "title": "Eigentumsrechte",
+      "beforeAcademy": "Abgesehen von dem Design, das Eigentum der ",
+      "beforePortfolio": " ist, behalten wir, die aufgeführten Studierenden, sämtliche Eigentumsrechte an ",
+      "afterPortfolio": ", einschließlich aller damit verbundenen urheberrechtlich geschützten Materialien, Marken und sonstigen geschützten Informationen."
     },
     "use": {
       "title": "Nutzung des Produkts",
-      "text": "Dieses <a href=\"/#portfolio\">Portfolio</a> darf ausschließlich für rechtmäßige Zwecke und unter Einhaltung aller anwendbaren Gesetze und Vorschriften genutzt werden. Jegliche Nutzung für rechtswidrige Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist ausdrücklich untersagt. Für Ihre Interaktionen mit anderen Nutzern dieses <a href=\"/#portfolio\">Portfolios</a> sind Sie allein verantwortlich."
+      "beforePortfolio1": "",
+      "afterPortfolio1": " darf ausschließlich für rechtmäßige Zwecke und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften genutzt werden. Jegliche Nutzung von ",
+      "afterPortfolio2": " für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung einer anderen Person ist strengstens untersagt. Sie sind allein für Ihre Interaktionen mit anderen Nutzern von ",
+      "afterPortfolio3": " verantwortlich."
     },
     "liability": {
-      "title": "Gewährleistungs-Ausschluss und Haftungsbeschränkung",
-      "text": "Dieses <a href=\"/#portfolio\">Portfolio</a> wird in seinem jeweiligen aktuellen Zustand und ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Dies umfasst insbesondere keine Gewährleistung hinsichtlich der Marktgängigkeit, der Eignung für einen bestimmten Zweck oder der Nichtverletzung von Rechten Dritter. Soweit gesetzlich zulässig, haften weder wir, die aufgeführten Studierenden, noch die <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> für unmittelbare oder mittelbare Schäden, Neben- oder Folgeschäden, besondere Schäden oder sonstige Schäden, die aus der Nutzung dieses Produkts entstehen."
+      "title": "Gewährleistungsausschluss und Haftungsbeschränkung",
+      "beforePortfolio1": "",
+      "afterPortfolio1": " wird in der vorliegenden Form ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf die stillschweigende Gewährleistung der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung von Rechten Dritter. In keinem Fall haften wir, die aufgeführten Studierenden, oder die ",
+      "afterAcademy": " für unmittelbare, mittelbare, beiläufig entstandene, besondere, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden durch entgangenen Gewinn, Verlust des Geschäftswerts, Nutzungsausfall, Datenverlust oder andere immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die aus oder im Zusammenhang mit der Nutzung oder Leistung von ",
+      "afterPortfolio2": " entstehen."
     },
     "indemnity": {
       "title": "Freistellung",
-      "text": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> sowie unsere verbundenen Unternehmen, Partner, Vertretungsorgane, Beauftragten und Mitarbeitenden von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen freizustellen, die aus oder im Zusammenhang mit Ihrer Nutzung dieses <a href=\"/#portfolio\">Portfolios</a> entstehen."
+      "beforeAcademy": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die ",
+      "beforePortfolio": " sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Beauftragten und Mitarbeitenden von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Rechtskosten) freizustellen, zu verteidigen und schadlos zu halten, die aus oder im Zusammenhang mit Ihrer Nutzung von ",
+      "afterPortfolio": " und/oder Ihrem Verstoß gegen diese rechtlichen Hinweise entstehen."
     },
-    "questions": "Bei Fragen oder rechtlichen Hinweisen kontaktieren Sie uns bitte unter <a href=\"mailto:[Kontakt-E-Mail]\">[Kontakt-E-Mail]</a>.",
-    "date": "Stand: 26. Juli 2025"
+    "questions": "Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter [mail@danielgengel.de].",
+    "date": "Datum: 26. Juli 2025"
   },
 
   "privacy": {
