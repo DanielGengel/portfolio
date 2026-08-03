@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-references-component',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './references-component.html',
   styleUrl: './references-component.scss',
 })

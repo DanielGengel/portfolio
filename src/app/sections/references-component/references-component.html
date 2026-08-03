@@ -1,26 +1,19 @@
 <section id="references" class="references section__container">
   <header class="references__header">
     <h2 class="section-title references__title">
-      References
+      {{ 'references.headline' | translate }}
     </h2>
 
     <p class="references__intro">
-      I thrive both independently and as part of a team.
-      Here’s what my colleagues have to say about working with me.
+      {{ 'references.intro' | translate }}
     </p>
   </header>
 
   <div class="references__list">
-    @for (reference of references; track reference.name) {
+    @for (reference of references; track reference.name; let index = $index) {
       <blockquote class="reference-card" tabindex="0">
-        
         <div class="reference-card__header">
-          <span
-            class="reference-card__quote-mark"
-            aria-hidden="true"
-          >
-            ”
-          </span>
+          <span class="reference-card__quote-mark" aria-hidden="true"> ” </span>
 
           <cite class="reference-card__name">
             {{ reference.name }}
@@ -32,7 +25,7 @@
         </div>
 
         <p class="reference-card__text">
-          {{ reference.quote }}
+          {{ 'references.ref' + (index + 1) | translate }}
         </p>
       </blockquote>
     }
