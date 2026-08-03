@@ -1,6 +1,4 @@
 {
-  "demo.title": "This is a translation",
-  "demo.simple": "This is a test!",
 
   "header-menu": {
     "about": "About me",
@@ -61,7 +59,133 @@
     "button": "Send message"
   },
   "legal": {
-    "privacy": "privacy",
-    "imprint": "imprint"
+    "privacy": "Privacy",
+    "imprint": "Imprint"
+  },
+
+  "legalPage": {
+    "title": "Legal Notice",
+    "imprint": {
+      "title": "Imprint",
+      "name": "[First and last name]",
+      "address": "[Street and house number]",
+      "city": "[Postcode and city]"
+    },
+    "contact": {
+      "title": "Contact",
+      "emailLabel": "Email:",
+      "email": "[Email address]"
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "text": "By accessing and using this <a href=\"/#portfolio\">portfolio</a> (hereinafter referred to as the “Product”), you acknowledge and agree to the following terms and conditions, as well as any policies, guidelines, additions, or amendments that may be presented to you from time to time. We, the listed students, reserve the right to update or change these terms at any time without prior notice."
+    },
+    "scope": {
+      "title": "Scope and Ownership of the Product",
+      "text1": "This <a href=\"/#portfolio\">portfolio</a> was developed as a student project during a web development bootcamp at <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a>. It is intended solely for educational and demonstration purposes and is not designed for extensive personal or business use. Therefore, we cannot guarantee the continued availability, reliability, accuracy, or any other quality aspect of this Product.",
+      "text2": "The design of this <a href=\"/#portfolio\">portfolio</a> is owned by <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+    },
+    "rights": {
+      "title": "Proprietary Rights",
+      "text": "With the exception of the design owned by <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a>, we, the listed students, retain all proprietary rights in this <a href=\"/#portfolio\">portfolio</a>. This includes all associated copyrighted material, trademarks, and other proprietary information."
+    },
+    "use": {
+      "title": "Use of the Product",
+      "text": "This <a href=\"/#portfolio\">portfolio</a> may only be used for lawful purposes and in accordance with all applicable laws and regulations. Any use for illegal activities or to harass, harm, threaten, or intimidate another person is strictly prohibited. You are solely responsible for your interactions with other users of this <a href=\"/#portfolio\">portfolio</a>."
+    },
+    "liability": {
+      "title": "Disclaimer of Warranties and Limitation of Liability",
+      "text": "This <a href=\"/#portfolio\">portfolio</a> is provided “as is” without any express or implied warranty, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement. To the extent permitted by law, neither we, the listed students, nor <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> shall be liable for any direct, indirect, incidental, special, consequential, exemplary, or other damages arising from the use of this Product."
+    },
+    "indemnity": {
+      "title": "Indemnity",
+      "text": "You agree to indemnify, defend, and hold harmless us, the listed students, <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a>, and our affiliates, partners, officers, directors, agents, and employees from and against any claim, demand, loss, damage, cost, or liability arising out of or relating to your use of this <a href=\"/#portfolio\">portfolio</a>."
+    },
+    "questions": "For any questions or legal notices, please contact us at <a href=\"mailto:[Contact email]\">[Contact email]</a>.",
+    "date": "Last updated: July 26, 2025"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "introduction": "Protecting your personal data is important to me. This Privacy Policy explains, in accordance with Articles 12, 13, and 14 of the General Data Protection Regulation (GDPR), which personal data is processed when you visit this website or contact me.",
+    "controller": {
+      "title": "1. Controller",
+      "name": "[First and last name]",
+      "address": "[Street and house number]",
+      "city": "[Postcode and city]",
+      "country": "Germany",
+      "emailLabel": "Email:",
+      "email": "[Email address]"
+    },
+    "hosting": {
+      "title": "2. Hosting and server log data",
+      "text1": "When you access this website, the hosting provider processes technically necessary connection data. This may include your IP address, the date and time of access, the requested file or page, the amount of data transferred, the referrer URL, browser type and version, operating system, and access status. This processing is necessary to provide the website securely and reliably and to detect and prevent attacks.",
+      "provider": "Hosting provider: [Name, address, and link to the hosting provider’s privacy policy]",
+      "text2": "Where the hosting provider processes data on my behalf, this is governed by a data processing agreement in accordance with Article 28 GDPR.",
+      "legalBasis": "The legal basis is Article 6(1)(f) GDPR. My legitimate interest lies in providing a secure, functional, and economical website.",
+      "retention": "Server log data is stored for [the hosting provider’s specific retention period] and subsequently deleted unless continued storage is necessary to investigate a security incident."
+    },
+    "contactForm": {
+      "title": "3. Contact requests and contact form",
+      "text1": "If you contact me by email or through the contact form, I process the information you provide to handle your request and answer any follow-up questions.",
+      "data": "The data processed may include your name, email address, message content, time of submission, and technically necessary metadata.",
+      "legalBasis": "If your request concerns a contract or pre-contractual steps, the legal basis is Article 6(1)(b) GDPR. Other requests are processed under Article 6(1)(f) GDPR. The legitimate interest is the appropriate handling and response to your request.",
+      "requiredFields": "The information marked as mandatory is required to process and respond to your request. Without this information, your request cannot be submitted through the form.",
+      "recipients": "Recipients may include the hosting provider, the form service, and the email provider. Add every service actually used here: [Provider and privacy information].",
+      "retention": "Your request will be deleted once it has been fully processed and no statutory retention obligations or legitimate reasons require continued storage. Intended standard period: [specific deletion period, for example six months after the request has been completed]."
+    },
+    "cookies": {
+      "title": "4. Cookies and local storage",
+      "text1": "This website currently uses no cookies requiring consent and no analytics, marketing, or tracking technologies. If this changes, this Privacy Policy will be updated and, where required, consent will be obtained before storing or accessing information in accordance with Section 25(1) TDDDG and Article 6(1)(a) GDPR.",
+      "language": "Information may be stored locally in your browser to remember your selected language. This storage is necessary to provide the language setting you expressly requested. The legal bases are Section 25(2) no. 2 TDDDG and Article 6(1)(f) GDPR. The setting remains stored until you delete your browser data or select a different language."
+    },
+    "externalLinks": {
+      "title": "5. External links",
+      "text": "This website contains links to external services such as GitHub, LinkedIn, or Developer Akademie. Data is transferred to the relevant provider only after you open such a link. The operator of the external website is responsible for processing data there. Please refer to the respective provider’s privacy information."
+    },
+    "security": {
+      "title": "6. Encryption and data security",
+      "text": "This website uses TLS encryption to protect transmitted data against unauthorized access by third parties. An encrypted connection can generally be identified by “https://” in your browser’s address bar. Despite appropriate technical and organizational measures, completely risk-free data transmission over the internet cannot be guaranteed."
+    },
+    "recipients": {
+      "title": "7. Recipients of personal data",
+      "text": "Personal data is disclosed only where necessary to provide the website, handle your request, comply with a legal obligation, or on another lawful basis. Processors are contractually bound in accordance with Article 28 GDPR."
+    },
+    "thirdCountries": {
+      "title": "8. Transfers to third countries",
+      "text": "Personal data is transferred to countries outside the European Union or European Economic Area only where this is actually required for a service and permitted under Articles 44 et seq. GDPR. Where applicable, add the service, recipient country, and transfer mechanism here: [Details of the third-country transfer or “No transfer to a third country takes place.”]."
+    },
+    "retention": {
+      "title": "9. Retention periods",
+      "text": "Personal data is stored only for as long as necessary for the relevant purpose. It is subsequently deleted unless statutory retention requirements, the establishment, exercise, or defence of legal claims, or another lawful reason requires continued storage."
+    },
+    "rights": {
+      "title": "10. Your rights",
+      "intro": "Subject to the applicable legal requirements, you have the following rights in particular:",
+      "access": "Access to your processed personal data under Article 15 GDPR",
+      "rectification": "Rectification of inaccurate data or completion of incomplete data under Article 16 GDPR",
+      "erasure": "Erasure of your personal data under Article 17 GDPR",
+      "restriction": "Restriction of processing under Article 18 GDPR",
+      "portability": "Data portability under Article 20 GDPR, where the statutory requirements are met",
+      "objection": "Objection to processing based on Article 6(1)(e) or (f) GDPR under Article 21 GDPR",
+      "withdrawal": "You may withdraw consent at any time with future effect under Article 7(3) GDPR. The lawfulness of processing carried out before withdrawal remains unaffected. To exercise your rights, you may contact the email address stated above."
+    },
+    "complaint": {
+      "title": "11. Right to lodge a complaint",
+      "text": "Under Article 77 GDPR, you have the right to lodge a complaint with a data protection supervisory authority. In particular, you may contact the authority responsible for your habitual residence, your place of work, the place of the alleged infringement, or the competent state authority for the controller.",
+      "link": "List of German data protection supervisory authorities"
+    },
+    "automatedDecisions": {
+      "title": "12. Automated decision-making",
+      "text": "No automated decision-making, including profiling within the meaning of Article 22 GDPR, takes place."
+    },
+    "changes": {
+      "title": "13. Updates to this Privacy Policy",
+      "text": "This Privacy Policy will be updated if the website, the services used, or the legal requirements change. The version published on this page at the relevant time applies."
+    },
+    "date": "Last updated: August 3, 2026"
   }
+
 }
+
+

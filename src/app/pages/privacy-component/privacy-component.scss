@@ -2,11 +2,12 @@
 
 .privacy-page {
   max-width: 1440px;
-  min-height: calc(100dvh - 92px);
+  min-height: calc(100dvh - 120px);
   margin: 0 auto;
   padding-top: 150px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 100px;
 
   color: variable.$text-color-primary;
   background: transparent;
@@ -16,7 +17,7 @@
 }
 
 h1 {
-  //   margin: 0 0 64px;
+  margin: 0 0 64px;
   font-family: 'Syne', sans-serif;
   font-size: clamp(44px, 7vw, 72px);
   font-weight: 800;
@@ -30,12 +31,12 @@ section {
 h2 {
   margin: 0 0 14px;
   color: variable.$highlight;
-  font-size: 26px;
+ font-size: 36px;
   font-weight: 700;
 }
 
 p {
-  margin: 0;
+  margin-bottom: 30px;
   line-height: 1.3;
 }
 

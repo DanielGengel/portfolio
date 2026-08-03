@@ -1,7 +1,4 @@
 {
-  "demo.title": "Dies ist eine Übersetzung",
-  "demo.simple": "Dies ist ein Test",
-
   "header-menu": {
     "about": "Über mich",
     "skills": "Meine Skills",
@@ -23,46 +20,169 @@
   "skills": {
     "skill": "Eine bestimmte Fähigkeit nicht gefunden?",
     "contact": " Kontaktiere mich bitte!",
-     "ready": " Ich bin jederzeit bereit dazuzulernen und zu helfen!"
+    "ready": " Ich bin jederzeit bereit dazuzulernen und zu helfen!"
   },
 
   "portfolio": {
-  "intro": "Entdecke hier eine Auswahl meiner Arbeiten und probiere die Projekte aus, um meine Fähigkeiten in Aktion zu erleben.",
-  "project1": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstelle und organisiere Aufgaben per Drag-and-drop und weise ihnen Benutzer und Kategorien zu.",
-  "project2": "Ein Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe dabei, Münzen zu sammeln und den Endgegner zu besiegen."
-},
+    "intro": "Entdecke hier eine Auswahl meiner Arbeiten und probiere die Projekte aus, um meine Fähigkeiten in Aktion zu erleben.",
+    "project1": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstelle und organisiere Aufgaben per Drag-and-drop und weise ihnen Benutzer und Kategorien zu.",
+    "project2": "Ein Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe dabei, Münzen zu sammeln und den Endgegner zu besiegen."
+  },
 
-"references": {
-  "headline": "Referenzen",
-  "intro": "Ich arbeite sowohl selbstständig als auch im Team erfolgreich. Das sagen meine Kolleginnen und Kollegen über die Zusammenarbeit mit mir.",
-  "ref1": "Mit seinem Organisationstalent und seiner klaren Kommunikation hat Michael wesentlich zum Zusammenhalt des Teams beigetragen. Ohne sein Engagement wären wir nicht so weit gekommen.",
-  "ref2": "Michi war ein hervorragender Teamkollege. Seine positive Einstellung und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreichen konnten.",
-  "ref3": "Die Zusammenarbeit mit Michael war eine große Freude. Er versteht es, Teammitglieder zu motivieren, ihr Bestes zu geben, und bringt stets wertvolle Ideen in gemeinsame Brainstormings ein. Darüber hinaus war er jederzeit ansprechbar, hörte aufmerksam zu und unterstützte andere zuverlässig."
-},
+  "references": {
+    "headline": "Referenzen",
+    "intro": "Ich arbeite sowohl selbstständig als auch im Team erfolgreich. Das sagen meine Kolleginnen und Kollegen über die Zusammenarbeit mit mir.",
+    "ref1": "Mit seinem Organisationstalent und seiner klaren Kommunikation hat Michael wesentlich zum Zusammenhalt des Teams beigetragen. Ohne sein Engagement wären wir nicht so weit gekommen.",
+    "ref2": "Michi war ein hervorragender Teamkollege. Seine positive Einstellung und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreichen konnten.",
+    "ref3": "Die Zusammenarbeit mit Michael war eine große Freude. Er versteht es, Teammitglieder zu motivieren, ihr Bestes zu geben, und bringt stets wertvolle Ideen in gemeinsame Brainstormings ein. Darüber hinaus war er jederzeit ansprechbar, hörte aufmerksam zu und unterstützte andere zuverlässig."
+  },
 
-"contactForm": {
-  "hi": "Melde dich!",
-  "subline": "Möchtest du ein neues Projekt besprechen?",
-  "intro": "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam verwirklichen.",
-  "name": "Dein Name",
-  "error1": "Bitte gib deinen Namen ein.",
-  "error2": "Dein Name muss mindestens drei Zeichen lang sein.",
-  "error3": "Dein Name darf keine Zahlen oder Sonderzeichen enthalten.",
-  "email": "Deine Email-Adresse",
-  "error4": "Bitte gib deine E-Mail-Adresse ein.",
-  "error5": "Bitte gib eine vollständige E-Mail-Adresse ein.",
-  "message": "Deine Nachricht",
-  "error6": "Bitte gib eine Nachricht ein.",
-  "error7": "Deine Nachricht muss mindestens zehn Zeichen lang sein.",
-  "privacy-part1": "Ich habe die ",
-  "privacy-part2": "Datenschutzerklärung",
-  "privacy-part3": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
-  "error8": "Bitte akzeptiere die Datenschutzerklärung.",
-  "button": "Nachricht senden"
-},
+  "contactForm": {
+    "hi": "Melde dich!",
+    "subline": "Möchtest du ein neues Projekt besprechen?",
+    "intro": "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam verwirklichen.",
+    "name": "Dein Name",
+    "error1": "Bitte gib deinen Namen ein.",
+    "error2": "Dein Name muss mindestens drei Zeichen lang sein.",
+    "error3": "Dein Name darf keine Zahlen oder Sonderzeichen enthalten.",
+    "email": "Deine Email-Adresse",
+    "error4": "Bitte gib deine E-Mail-Adresse ein.",
+    "error5": "Bitte gib eine vollständige E-Mail-Adresse ein.",
+    "message": "Deine Nachricht",
+    "error6": "Bitte gib eine Nachricht ein.",
+    "error7": "Deine Nachricht muss mindestens zehn Zeichen lang sein.",
+    "privacy-part1": "Ich habe die ",
+    "privacy-part2": "Datenschutzerklärung",
+    "privacy-part3": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
+    "error8": "Bitte akzeptiere die Datenschutzerklärung.",
+    "button": "Nachricht senden"
+  },
 
-"legal": {
-  "privacy": "Datenschutzerklärung",
-  "imprint": "Impressum"
-}
+  "legal": {
+    "privacy": "Datenschutzerklärung",
+    "imprint": "Impressum"
+  },
+
+  "legalPage": {
+    "title": "Rechtliche Hinweise",
+    "imprint": {
+      "title": "Impressum",
+      "name": "[Vor- und Nachname]",
+      "address": "[Straße und Hausnummer]",
+      "city": "[Postleitzahl und Ort]"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "emailLabel": "E-Mail:",
+      "email": "[E-Mail-Adresse]"
+    },
+    "acceptance": {
+      "title": "Akzeptanz der Bedingungen",
+      "text": "Durch den Zugriff auf und die Nutzung dieses <a href=\"/#portfolio\">Portfolios</a> (nachfolgend „Produkt“) erkennen Sie die folgenden Bedingungen sowie alle Richtlinien, Ergänzungen und Änderungen an, die Ihnen gegebenenfalls von Zeit zu Zeit mitgeteilt werden. Wir, die aufgeführten Studierenden, behalten uns vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern."
+    },
+    "scope": {
+      "title": "Geltungsbereich und Eigentumsrechte am Produkt",
+      "text1": "Dieses <a href=\"/#portfolio\">Portfolio</a> wurde im Rahmen eines Webentwicklungs-Bootcamps bei der <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> als studentisches Projekt entwickelt. Es dient ausschließlich Bildungs- und Demonstrationszwecken und ist nicht für eine umfassende private oder geschäftliche Nutzung vorgesehen. Daher übernehmen wir keine Gewähr für die dauerhafte Verfügbarkeit, Zuverlässigkeit, Richtigkeit oder sonstige Qualitätsmerkmale dieses Produkts.",
+      "text2": "Das Design dieses <a href=\"/#portfolio\">Portfolios</a> ist Eigentum der <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a>. Eine unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist ausdrücklich untersagt."
+    },
+    "rights": {
+      "title": "Schutz- und Eigentumsrechte",
+      "text": "Mit Ausnahme des Designs, das Eigentum der <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> ist, behalten wir, die aufgeführten Studierenden, sämtliche Schutz- und Eigentumsrechte an diesem <a href=\"/#portfolio\">Portfolio</a>. Dies umfasst insbesondere urheberrechtlich geschützte Inhalte, Marken und sonstige geschützte Informationen."
+    },
+    "use": {
+      "title": "Nutzung des Produkts",
+      "text": "Dieses <a href=\"/#portfolio\">Portfolio</a> darf ausschließlich für rechtmäßige Zwecke und unter Einhaltung aller anwendbaren Gesetze und Vorschriften genutzt werden. Jegliche Nutzung für rechtswidrige Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist ausdrücklich untersagt. Für Ihre Interaktionen mit anderen Nutzern dieses <a href=\"/#portfolio\">Portfolios</a> sind Sie allein verantwortlich."
+    },
+    "liability": {
+      "title": "Gewährleistungsausschluss und Haftungsbeschränkung",
+      "text": "Dieses <a href=\"/#portfolio\">Portfolio</a> wird in seinem jeweiligen aktuellen Zustand und ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Dies umfasst insbesondere keine Gewährleistung hinsichtlich der Marktgängigkeit, der Eignung für einen bestimmten Zweck oder der Nichtverletzung von Rechten Dritter. Soweit gesetzlich zulässig, haften weder wir, die aufgeführten Studierenden, noch die <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> für unmittelbare oder mittelbare Schäden, Neben- oder Folgeschäden, besondere Schäden oder sonstige Schäden, die aus der Nutzung dieses Produkts entstehen."
+    },
+    "indemnity": {
+      "title": "Freistellung",
+      "text": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die <a href=\"https://developerakademie.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Developer Akademie GmbH</a> sowie unsere verbundenen Unternehmen, Partner, Vertretungsorgane, Beauftragten und Mitarbeitenden von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen freizustellen, die aus oder im Zusammenhang mit Ihrer Nutzung dieses <a href=\"/#portfolio\">Portfolios</a> entstehen."
+    },
+    "questions": "Bei Fragen oder rechtlichen Hinweisen kontaktieren Sie uns bitte unter <a href=\"mailto:[Kontakt-E-Mail]\">[Kontakt-E-Mail]</a>.",
+    "date": "Stand: 26. Juli 2025"
+  },
+
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "introduction": "Der Schutz Ihrer personenbezogenen Daten ist mir wichtig. Diese Datenschutzerklärung informiert Sie gemäß Art. 12, 13 und 14 der Datenschutz-Grundverordnung (DSGVO) darüber, welche personenbezogenen Daten beim Besuch dieser Website und bei der Kontaktaufnahme verarbeitet werden.",
+    "controller": {
+      "title": "1. Verantwortlicher",
+      "name": "[Vor- und Nachname]",
+      "address": "[Straße und Hausnummer]",
+      "city": "[Postleitzahl und Ort]",
+      "country": "Deutschland",
+      "emailLabel": "E-Mail:",
+      "email": "[E-Mail-Adresse]"
+    },
+    "hosting": {
+      "title": "2. Hosting und Server-Protokolldaten",
+      "text1": "Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter technisch erforderliche Verbindungsdaten. Dazu können insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Datei oder Seite, übertragene Datenmenge, Referrer-URL, Browsertyp, Browserversion, Betriebssystem und Zugriffsstatus gehören. Die Verarbeitung dient der sicheren und stabilen Bereitstellung der Website sowie der Erkennung und Abwehr von Angriffen.",
+      "provider": "Hosting-Anbieter: [Name, Anschrift und Link zur Datenschutzerklärung des Hosting-Anbieters]",
+      "text2": "Soweit der Hosting-Anbieter Daten in meinem Auftrag verarbeitet, erfolgt dies auf Grundlage eines Vertrags zur Auftragsverarbeitung gemäß Art. 28 DSGVO.",
+      "legalBasis": "Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse liegt in der sicheren, funktionsfähigen und wirtschaftlichen Bereitstellung dieser Website.",
+      "retention": "Server-Protokolldaten werden für [konkrete Speicherdauer des Hosting-Anbieters] gespeichert und anschließend gelöscht, sofern keine weitere Aufbewahrung zur Aufklärung eines Sicherheitsvorfalls erforderlich ist."
+    },
+    "contactForm": {
+      "title": "3. Kontaktaufnahme und Kontaktformular",
+      "text1": "Wenn Sie mich per Kontaktformular oder E-Mail kontaktieren, verarbeite ich Ihre Angaben, um Ihre Anfrage zu bearbeiten und mögliche Anschlussfragen zu beantworten.",
+      "data": "Dabei können insbesondere Ihr Name, Ihre E-Mail-Adresse, der Inhalt Ihrer Nachricht, der Zeitpunkt der Übermittlung sowie technisch erforderliche Metadaten verarbeitet werden.",
+      "legalBasis": "Bezieht sich Ihre Anfrage auf einen Vertrag oder vorvertragliche Maßnahmen, ist Art. 6 Abs. 1 lit. b DSGVO die Rechtsgrundlage. Bei sonstigen Anfragen erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse besteht in der sachgerechten Bearbeitung und Beantwortung Ihrer Anfrage.",
+      "requiredFields": "Die Bereitstellung der als Pflichtfelder gekennzeichneten Angaben ist erforderlich, damit Ihre Anfrage bearbeitet und beantwortet werden kann. Ohne diese Angaben kann die Anfrage nicht über das Formular versendet werden.",
+      "recipients": "Empfänger können der Hosting-Anbieter, der eingesetzte Formulardienst und der E-Mail-Anbieter sein. Ergänzen Sie hier alle tatsächlich eingesetzten Dienstleister: [Anbieter und Datenschutzhinweise].",
+      "retention": "Ihre Anfrage wird gelöscht, sobald sie abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten oder berechtigten Gründe für eine weitere Speicherung bestehen. Vorgesehene Regelfrist: [konkrete Löschfrist, zum Beispiel sechs Monate nach Abschluss der Bearbeitung]."
+    },
+    "cookies": {
+      "title": "4. Cookies und lokale Speicherung",
+      "text1": "Diese Website verwendet nach derzeitigem Stand keine einwilligungsbedürftigen Cookies, Analyse-, Marketing- oder Tracking-Technologien. Sollte sich dies ändern, wird diese Datenschutzerklärung angepasst und, soweit erforderlich, vor der Speicherung oder dem Zugriff eine Einwilligung gemäß § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO eingeholt.",
+      "language": "Zur Speicherung der von Ihnen gewählten Sprache kann eine Information lokal in Ihrem Browser gespeichert werden. Diese Speicherung ist erforderlich, um die ausdrücklich gewünschte Spracheinstellung bereitzustellen. Rechtsgrundlagen sind § 25 Abs. 2 Nr. 2 TDDDG und Art. 6 Abs. 1 lit. f DSGVO. Die Einstellung bleibt gespeichert, bis Sie die Browserdaten löschen oder die Sprache erneut ändern."
+    },
+    "externalLinks": {
+      "title": "5. Externe Links",
+      "text": "Diese Website enthält Links zu externen Angeboten, etwa GitHub, LinkedIn oder der Developer Akademie. Erst wenn Sie einen solchen Link öffnen, werden Daten an den jeweiligen Anbieter übertragen. Für die Datenverarbeitung auf der externen Website ist deren Betreiber verantwortlich. Bitte beachten Sie die dortigen Datenschutzhinweise."
+    },
+    "security": {
+      "title": "6. Verschlüsselung und Datensicherheit",
+      "text": "Diese Website nutzt eine TLS-Verschlüsselung, um übermittelte Daten vor dem unbefugten Zugriff Dritter zu schützen. Eine verschlüsselte Verbindung erkennen Sie in der Regel an „https://“ in der Adresszeile Ihres Browsers. Trotz angemessener technischer und organisatorischer Maßnahmen kann eine vollständig risikofreie Datenübertragung im Internet nicht garantiert werden."
+    },
+    "recipients": {
+      "title": "7. Empfänger personenbezogener Daten",
+      "text": "Personenbezogene Daten werden nur weitergegeben, wenn dies zur Bereitstellung der Website, zur Bearbeitung Ihrer Anfrage, zur Erfüllung einer rechtlichen Verpflichtung oder auf Grundlage einer anderen gesetzlichen Erlaubnis erforderlich ist. Eingesetzte Auftragsverarbeiter werden gemäß Art. 28 DSGVO vertraglich verpflichtet."
+    },
+    "thirdCountries": {
+      "title": "8. Übermittlungen in Drittländer",
+      "text": "Eine Übermittlung personenbezogener Daten in Staaten außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums findet nur statt, wenn sie für einen eingesetzten Dienst tatsächlich erforderlich und nach Art. 44 ff. DSGVO zulässig ist. Ergänzen Sie hier gegebenenfalls den Dienst, das Empfängerland und die verwendete Übermittlungsgrundlage: [Angaben zur Drittlandübermittlung oder „Es findet keine Drittlandübermittlung statt.“]."
+    },
+    "retention": {
+      "title": "9. Speicherdauer",
+      "text": "Personenbezogene Daten werden nur so lange gespeichert, wie dies für den jeweiligen Zweck erforderlich ist. Anschließend werden sie gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten, die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder andere zulässige Gründe eine weitere Speicherung erfordern."
+    },
+    "rights": {
+      "title": "10. Ihre Rechte",
+      "intro": "Unter den gesetzlichen Voraussetzungen haben Sie insbesondere folgende Rechte:",
+      "access": "Auskunft über Ihre verarbeiteten personenbezogenen Daten gemäß Art. 15 DSGVO",
+      "rectification": "Berichtigung unrichtiger oder Vervollständigung unvollständiger Daten gemäß Art. 16 DSGVO",
+      "erasure": "Löschung Ihrer personenbezogenen Daten gemäß Art. 17 DSGVO",
+      "restriction": "Einschränkung der Verarbeitung gemäß Art. 18 DSGVO",
+      "portability": "Datenübertragbarkeit gemäß Art. 20 DSGVO, soweit die gesetzlichen Voraussetzungen erfüllt sind",
+      "objection": "Widerspruch gegen eine Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO gemäß Art. 21 DSGVO",
+      "withdrawal": "Eine erteilte Einwilligung können Sie gemäß Art. 7 Abs. 3 DSGVO jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt. Zur Ausübung Ihrer Rechte genügt eine Nachricht an die oben genannte E-Mail-Adresse."
+    },
+    "complaint": {
+      "title": "11. Beschwerderecht",
+      "text": "Sie haben gemäß Art. 77 DSGVO das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Sie können sich insbesondere an die Aufsichtsbehörde Ihres gewöhnlichen Aufenthaltsorts, Ihres Arbeitsplatzes, des Orts des mutmaßlichen Verstoßes oder an die für den Verantwortlichen zuständige Landesaufsichtsbehörde wenden.",
+      "link": "Liste der deutschen Datenschutzaufsichtsbehörden"
+    },
+    "automatedDecisions": {
+      "title": "12. Automatisierte Entscheidungen",
+      "text": "Eine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO findet nicht statt."
+    },
+    "changes": {
+      "title": "13. Aktualisierung dieser Datenschutzerklärung",
+      "text": "Diese Datenschutzerklärung wird angepasst, wenn sich die Website, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung."
+    },
+    "date": "Stand: 3. August 2026"
+  }
 }
