@@ -2,7 +2,7 @@
 
 .contact {
   width: 100%;
-  height: 920px;
+  height: 950px;
   padding-top: 130px;
 
   // background-color: red;
@@ -13,9 +13,8 @@
 }
 
 .contact__content {
-  // padding-left: 100px;
-  // padding-right: 100px;
-  // width: min(100%, 1440px);
+ 
+  width: min(100%, 1440px);
   // margin: 0 auto;
 }
 
@@ -32,8 +31,9 @@
 }
 
 .contact__intro {
-  width: min(100%, 508px);
-  margin: 50px auto 18px;
+  // width: 1440px;
+  max-width: min(100%, 800px);
+  margin: 50px auto 35px;
   text-align: center;
 // font-family: 'Overpass', sans-serif;
     font-size: 32px;
@@ -49,7 +49,11 @@
   // }
 
   p {
-    display: none;
+    
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: variable.$text-color-secondary;
   }
 }
 
@@ -164,10 +168,9 @@
 
 .form-error {
  position: absolute;
-  top: calc(100% + 7px);
+  top: calc(100% + 10px);
   left: 0;
 
-  margin: 0;
   font-size: 16px;
   line-height: 16px;
   color: red;
@@ -176,7 +179,7 @@
 .privacy-field {
   display: flex;
   align-items: flex-start;
-  gap: 9px;
+  gap: 10px;
 
   margin-top: 16px;
 
@@ -257,7 +260,7 @@
 .contact__top {
   position: absolute;
   right: 130px;
-  bottom: 20px;
+  bottom: 0px;
   // padding-right: 60px;
 
   color: variable.$light-bg;
@@ -318,8 +321,8 @@
 
 @media (max-width: 700px) {
   .contact {
-    min-height: 700px;
-    padding: 70px 20px;
+    min-height: 1200px;
+    padding: 100px 20px;
     background-size: auto 100%;
   }
 

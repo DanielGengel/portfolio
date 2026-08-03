@@ -364,4 +364,15 @@
   .project:focus-within .project__arrow {
     opacity: 0;
   }
+
+  .project__button {
+  
+  min-width: 90px;
+  padding: 5px 5px;
+
+  // font-family: Overpass;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  }
 }

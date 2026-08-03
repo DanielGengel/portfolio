@@ -40,17 +40,18 @@
   "ref3": "Die Zusammenarbeit mit Michael war eine große Freude. Er versteht es, Teammitglieder zu motivieren, ihr Bestes zu geben, und bringt stets wertvolle Ideen in gemeinsame Brainstormings ein. Darüber hinaus war er jederzeit ansprechbar, hörte aufmerksam zu und unterstützte andere zuverlässig."
 },
 
-"form": {
+"contactForm": {
   "hi": "Melde dich!",
-  "intro": "Möchtest du ein neues Projekt besprechen?",
-  "name": "",
+  "subline": "Möchtest du ein neues Projekt besprechen?",
+  "intro": "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam verwirklichen.",
+  "name": "Dein Name",
   "error1": "Bitte gib deinen Namen ein.",
   "error2": "Dein Name muss mindestens drei Zeichen lang sein.",
   "error3": "Dein Name darf keine Zahlen oder Sonderzeichen enthalten.",
-  "email": "",
+  "email": "Deine Email-Adresse",
   "error4": "Bitte gib deine E-Mail-Adresse ein.",
   "error5": "Bitte gib eine vollständige E-Mail-Adresse ein.",
-  "message": "",
+  "message": "Deine Nachricht",
   "error6": "Bitte gib eine Nachricht ein.",
   "error7": "Deine Nachricht muss mindestens zehn Zeichen lang sein.",
   "privacy-part1": "Ich habe die ",

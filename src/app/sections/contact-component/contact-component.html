@@ -1,40 +1,40 @@
 <section class="contact" id="contact">
   <div class="contact__content section__container">
-    <h2 class="contact__title">Say Hi!</h2>
+    <h2 class="contact__title">{{ 'contactForm.hi' | translate }}</h2>
 
     <div class="contact__intro">
-      <h3>Want to discuss a new project?</h3>
-      <p>Say hello! Let’s discuss your ideas and make it happen.</p>
+      <h3>{{ 'contactForm.subline' | translate }}</h3>
+      <p class="intro">{{ 'contactForm.intro' | translate }}</p>
     </div>
 
     <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-field">
-        <label for="name">Your name</label>
+        <label for="name">{{ 'contactForm.name' | translate }}</label>
 
         <input id="name" type="text" formControlName="name" autocomplete="name" />
 
         @if (contactForm.controls.name.touched && contactForm.controls.name.hasError('required')) {
-          <p class="form-error">Please enter your name.</p>
+          <p class="form-error">{{ 'contactForm.error1' | translate }}</p>
         }
 
         @if (contactForm.controls.name.touched && contactForm.controls.name.hasError('minlength')) {
-          <p class="form-error">Your name must contain at least 3 characters.</p>
+          <p class="form-error">{{ 'contactForm.error2' | translate }}</p>
         }
 
         @if (contactForm.controls.name.hasError('pattern') && contactForm.controls.name.touched) {
-          <p class="form-error">The name must not contain numbers or special characters.</p>
+          <p class="form-error">{{ 'contactForm.error3' | translate }}</p>
         }
       </div>
 
       <div class="form-field">
-        <label for="email">Your email</label>
+        <label for="email">{{ 'contactForm.email' | translate }}</label>
 
         <input id="email" type="email" formControlName="email" autocomplete="email" />
 
         @if (
           contactForm.controls.email.touched && contactForm.controls.email.hasError('required')
         ) {
-          <p class="form-error">Your email is required.</p>
+          <p class="form-error">{{ 'contactForm.error4' | translate }}</p>
         }
 
         @if (
@@ -42,25 +42,25 @@
           (contactForm.controls.email.hasError('email') ||
             contactForm.controls.email.hasError('pattern'))
         ) {
-          <p class="form-error">Please enter a complete email address.</p>
+          <p class="form-error">{{ 'contactForm.error5' | translate }}</p>
         }
       </div>
 
       <div class="form-field">
-        <label for="message">Your message</label>
+        <label for="message">{{ 'contactForm.message' | translate }}</label>
 
         <textarea id="message" formControlName="message" rows="6"></textarea>
 
         @if (
           contactForm.controls.message.touched && contactForm.controls.message.hasError('required')
         ) {
-          <p class="form-error">Please enter a message.</p>
+          <p class="form-error">{{ 'contactForm.error6' | translate }}</p>
         }
 
         @if (
           contactForm.controls.message.touched && contactForm.controls.message.hasError('minlength')
         ) {
-          <p class="form-error">Your message must contain at least 10 characters.</p>
+          <p class="form-error">{{ 'contactForm.error7' | translate }}</p>
         }
       </div>
 
@@ -68,20 +68,21 @@
         <input id="privacy" type="checkbox" formControlName="privacyAccepted" />
 
         <label for="privacy">
-          I’ve read the
-          <a class="privacy" routerLink="/privacy">privacy policy</a>
-          and agree to the processing of my data as outlined.
+          {{ 'contactForm.privacy-part1' | translate }}
+          <a class="privacy" routerLink="/privacy">{{ 'contactForm.privacy-part2' | translate }}</a>
+          {{ 'contactForm.privacy-part3' | translate }}
         </label>
+
+        @if (
+          contactForm.controls.privacyAccepted.touched &&
+          contactForm.controls.privacyAccepted.invalid
+        ) {
+          <p class="form-error">{{ 'contactForm.error8' | translate }}</p>
+        }
       </div>
-      <a class="footer__privacy" routerLink="/privacy"> Privacy </a>|
+      <!-- <a class="footer__privacy" routerLink="/privacy"> Privacy </a>| -->
 
-      @if (
-        contactForm.controls.privacyAccepted.touched && contactForm.controls.privacyAccepted.invalid
-      ) {
-        <p class="form-error">Please accept the privacy policy.</p>
-      }
-
-      <button type="submit">Send message</button>
+      <button type="submit">{{ 'contactForm.button' | translate }}</button>
     </form>
 
     <a class="contact__top" href="#top" aria-label="Back to top">

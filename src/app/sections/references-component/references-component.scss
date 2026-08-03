@@ -113,10 +113,7 @@
 
 
 @media (max-width: 600px) {
-  .references {
-    // width: calc(100% - 30px);
-    // padding: 60px 0 80px;
-  }
+  
 
   .references__header {
     margin-bottom: 35px;
@@ -149,4 +146,6 @@
   .reference-card__text {
     font-size: 16px;
   }
+
+
 }
