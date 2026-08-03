@@ -10,7 +10,6 @@
 
 .hero__content {
   width: fit-content;
-  // max-width: calc(100% - 48px);
 
   margin-inline: auto;
   padding-top: clamp(70px, 14vh, 130px);
@@ -181,8 +180,6 @@
   }
 }
 
-
-
 @media (min-width: 1600px) {
   .hero {
     min-height: 50dvh;
@@ -199,21 +196,7 @@
   .hero {
     height: calc(100dvh - 62px);
   }
-  //   .hero__content {
-  //     width: calc(100% - 60px);
-  //     padding-top: 100px;
-  //   }
-
-  //   .hero__title {
-  //     font-size: clamp(44px, 14vw, 70px);
-  //     letter-spacing: -3px;
-  //   }
-
-  //   .hero__name-row {
-  //     gap: 12px;
-  //     margin-top: 20px;
-  //   }
-
+  
   .hero__email {
     bottom: 25px;
     left: 15px;
