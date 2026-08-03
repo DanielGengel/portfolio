@@ -20,6 +20,10 @@
         @if (contactForm.controls.name.touched && contactForm.controls.name.hasError('minlength')) {
           <p class="form-error">Your name must contain at least 3 characters.</p>
         }
+
+        @if (contactForm.controls.name.hasError('pattern') && contactForm.controls.name.touched) {
+          <p class="form-error">The name must not contain numbers or special characters.</p>
+        }
       </div>
 
       <div class="form-field">

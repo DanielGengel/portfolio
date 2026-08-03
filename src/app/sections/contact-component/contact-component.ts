@@ -12,7 +12,15 @@ export class ContactComponent {
   contactForm = new FormGroup({
     name: new FormControl('', {
       nonNullable: true,
-      validators: [Validators.required, Validators.minLength(3)],
+      validators: [
+        Validators.required,
+        Validators.minLength(3),
+        // [\p{L}\p{M}]+ -> Name must beginn with letters
+        // [ '’\-] -> Allow the following in name: space, straight apostrophe, 
+        // curly apostrophe and hyphen
+        // [\p{L}\p{M}]+ -> After every seperator must be a letter
+        Validators.pattern(/^[\p{L}\p{M}]+(?:[ '’\-][\p{L}\p{M}]+)*$/u),
+      ],
     }),
 
     email: new FormControl('', {
@@ -20,11 +28,11 @@ export class ContactComponent {
       validators: [
         Validators.required,
         Validators.email,
-        // [^\s@]+ → at least one character
-        // @ → after that @ neccesarry
-        // [^\s@]+ → at least one chracter for domain
-        // \. → dot neccesarry
-        // [^\s@]{2,} → at least 2 characters after dot
+        // [^\s@]+ -> at least one character
+        // @ -> after that @ neccesarry
+        // [^\s@]+ -> at least one chracter for domain
+        // \. -> dot neccesarry
+        // [^\s@]{2,} -> at least 2 characters after dot
         Validators.pattern(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/),
       ],
     }),
