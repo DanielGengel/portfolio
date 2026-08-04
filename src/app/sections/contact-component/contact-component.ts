@@ -1,7 +1,9 @@
-import { Component, inject } from '@angular/core';
-import {TranslatePipe, TranslateService} from '@ngx-translate/core';
+import { Component, inject, signal } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-contact-component',
@@ -10,6 +12,12 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './contact-component.scss',
 })
 export class ContactComponent {
+  private http = inject(HttpClient);
+
+  private readonly contactUrl = '/api/send-mail.php';
+
+  sendStatus = signal<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
   contactForm = new FormGroup({
     name: new FormControl('', {
       nonNullable: true,
@@ -17,7 +25,7 @@ export class ContactComponent {
         Validators.required,
         Validators.minLength(3),
         // [\p{L}\p{M}]+ -> Name must beginn with letters
-        // [ '’\-] -> Allow the following in name: space, straight apostrophe, 
+        // [ '’\-] -> Allow the following in name: space, straight apostrophe,
         // curly apostrophe and hyphen
         // [\p{L}\p{M}]+ -> After every seperator must be a letter
         Validators.pattern(/^[\p{L}\p{M}]+(?:[ '’\-][\p{L}\p{M}]+)*$/u),
@@ -55,11 +63,37 @@ export class ContactComponent {
       return;
     }
 
+    this.sendStatus.set('sending');
+
     const formData = this.contactForm.getRawValue();
 
-    console.log(formData);
+    // PHP only needs these three properties.
+    const requestData = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
 
-    // Send data...
+    this.http
+  .post<{ success: boolean }>(this.contactUrl, requestData)
+  .pipe(timeout(15000))
+  .subscribe({
+    next: (response) => {
+      console.log('Response received:', response);
+
+      if (response.success === true) {
+        this.sendStatus.set('sent');
+        this.contactForm.reset();
+      } else {
+        this.sendStatus.set('error');
+      }
+    },
+
+    error: (error) => {
+      console.error('Request failed:', error);
+      this.sendStatus.set('error');
+    },
+  });
 
     this.contactForm.reset();
   }

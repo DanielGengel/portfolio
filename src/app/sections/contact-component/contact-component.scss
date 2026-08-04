@@ -213,11 +213,58 @@
   }
 }
 
+
+.send-message {
+  margin-top: 24px;
+  text-align: center;
+  color: variable.$light-bg;
+}
+
+.send-message--success {
+  color: #70e000;
+}
+
+.send-message--error {
+  color: #e91e4d;
+}
+
+.contact__form button:disabled {
+  cursor: not-allowed;
+  color: #666;
+  border-color: #666;
+  transform: none;
+}
+
+
+.send-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 24px;
+  margin-top: 24px;
+
+  text-align: center;
+  color: variable.$light-bg;
+
+  p {
+    margin: 0;
+  }
+}
+
+.send-status--success {
+  color: #70e000;
+}
+
+.send-status--error {
+  color: #e91e4d;
+}
+
 .contact__form button {
   display: block;
 
   min-width: 220px;
-  margin: 36px auto 0;
+  margin: 12px auto 0;
   padding: 14px 28px;
 
   // font-family: 'Overpass', sans-serif;
@@ -334,7 +381,7 @@
 
 @media (max-width: 400px) {
   .contact {
-    min-height: 1250px;
+    min-height: 1300px;
   }
 
   .form-field {

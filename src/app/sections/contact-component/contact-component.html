@@ -82,7 +82,29 @@
       </div>
       <!-- <a class="footer__privacy" routerLink="/privacy"> Privacy </a>| -->
 
-      <button type="submit">{{ 'contactForm.button' | translate }}</button>
+      <div class="send-status" aria-live="polite">
+        @if (sendStatus() === 'sending') {
+          <p>{{ 'contactForm.sending' | translate }}</p>
+        }
+
+        @if (sendStatus() === 'sent') {
+          <p class="send-status--success">
+            {{ 'contactForm.sent' | translate }}
+          </p>
+        }
+
+        @if (sendStatus() === 'error') {
+          <p class="send-status--error">
+            {{ 'contactForm.sendError' | translate }}
+          </p>
+        }
+      </div>
+
+      <button type="submit" [disabled]="sendStatus() === 'sending'">
+        {{ 'contactForm.button' | translate }}
+      </button>
+
+      <!-- <button type="submit">{{ 'contactForm.button' | translate }}</button> -->
     </form>
 
     <a class="contact__top" href="#top" aria-label="Back to top">

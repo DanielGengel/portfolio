@@ -55,7 +55,10 @@
     "privacy-part2": "Datenschutzerklärung",
     "privacy-part3": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
     "error8": "Bitte akzeptiere die Datenschutzerklärung.",
-    "button": "Nachricht senden"
+    "button": "Nachricht senden",
+    "sending": "Nachricht wird gesendet...",
+    "sent": "Deine Nachricht wurde erfolgreich gesendet.",
+    "sendError": "Die Nachricht konnte nicht gesendet werden. Bitte versuche es erneut."
   },
 
   "legal": {
